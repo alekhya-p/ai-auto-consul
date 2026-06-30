@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto-Consul OG Card Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="og.css" />
+</head>
+<body>
+  <div class="og-card" id="og-card">
+    <div class="og-left">
+      <div class="og-header">
+        <div class="og-logo">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 2Z" fill="url(#logo-grad)" stroke="#14b8a6" stroke-width="2"/>
+            <path d="M9 11L11 13L15 9" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="3" y1="2" x2="21" y2="23" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0f172a"/>
+                <stop offset="100%" stop-color="#14b8a6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="og-logo-text">Auto-Consul</span>
+        </div>
+        <div class="og-badge" id="og-badge">THE DUTCH USED-CAR CO-PILOT</div>
+      </div>
+
+      <div class="og-body">
+        <h1 class="og-title" id="og-title">The Dutch used-car buyer's co-pilot.</h1>
+        <p class="og-desc" id="og-desc">Verify APK history, registry records, monthly cost estimates, and get deep AI analysis on any Dutch license plate instantly.</p>
+      </div>
+
+      <div class="og-footer">
+        <div class="og-features" id="og-features">
+          <div class="og-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Official RDW Data</span>
+          </div>
+          <div class="og-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Side-by-side Compare</span>
+          </div>
+          <div class="og-feat-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Verified AI Insights</span>
+          </div>
+        </div>
+        <div class="og-domain">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          <span>autoconsul.nl</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="og-right" id="og-right">
+      <!-- Device mockups will be dynamically injected here based on type -->
+    </div>
+  </div>
+
+  <script>
+    const q = new URLSearchParams(location.search);
+    const type = q.get('type') || 'main';
+
+    const config = {
+      main: {
+        badge: 'THE DUTCH USED-CAR CO-PILOT',
+        title: "The Dutch used-car buyer's co-pilot.",
+        desc: 'RDW facts, monthly-cost estimates, side-by-side compare, and a conversational AI agent that answers in plain language.',
+        features: ['Official RDW Data', 'Value Estimator', 'Deep AI Analysis'],
+        html: `
+          <div class="mockup-container mockup-container--main">
+            <div class="mockup-glow"></div>
+            <!-- The clean shells already contain the premium browser and iPhone device frames! -->
+            <img class="og-img-desktop" src="../../marketing-assets/shells/dossier-desktop.png" />
+            <img class="og-img-phone" src="../../marketing-assets/shells/home-phone.png" />
+          </div>
+        `
+      },
+      chat: {
+        badge: 'EXPERT CHAT AGENT',
+        title: "Ask your questions. Get verified facts.",
+        desc: 'Meet your agentic car expert. It runs real-time RDW lookups, cost estimation tools, and web searches to show structured cards inline.',
+        features: ['Natural Language', 'Live Tool-Calling', 'Verified Citations'],
+        html: `
+          <div class="mockup-container mockup-container--chat">
+            <div class="mockup-glow"></div>
+            <!-- Large phone screenshot with integrated iPhone frame -->
+            <img class="og-img-phone-lg" src="../../marketing-assets/shells/chat-phone.png" />
+          </div>
+        `
+      },
+      compare: {
+        badge: 'VEHICLE COMPARE',
+        title: "Compare multiple cars side by side.",
+        desc: 'Ditch the spreadsheets. See APK history, estimated values, monthly road taxes, fuel costs, and AI summaries compiled in a single table.',
+        features: ['Side-by-side Costs', 'Spec Comparison', 'AI Pros & Cons'],
+        html: `
+          <div class="mockup-container mockup-container--compare">
+            <div class="mockup-glow"></div>
+            <!-- Large browser screenshot with integrated browser frame -->
+            <img class="og-img-desktop-lg" src="../../marketing-assets/shells/compare-desktop.png" />
+          </div>
+        `
+      },
+      ai: {
+        badge: 'AI ANALYTICS',
+        title: "Deep vehicle analysis in seconds.",
+        desc: 'Our tiered AI analyses apk comments, registry records, and pricing charts to surface key buying highlights and red flags automatically.',
+        features: ['Buy/Avoid Flags', 'Market Price Bands', 'Risk Assessments'],
+        html: `
+          <div class="mockup-container mockup-container--ai">
+            <div class="mockup-glow"></div>
+            <!-- Large browser screenshot with integrated browser frame -->
+            <img class="og-img-desktop-lg" src="../../marketing-assets/shells/dossier-ai-desktop.png" />
+          </div>
+        `
+      }
+    };
+
+    const c = config[type] || config.main;
+
+    document.getElementById('og-badge').innerText = c.badge;
+    document.getElementById('og-title').innerText = c.title;
+    document.getElementById('og-desc').innerText = c.desc;
+    document.getElementById('og-right').innerHTML = c.html;
+
+    const featsHtml = c.features.map(f => `
+      <div class="og-feat-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <span>${f}</span>
+      </div>
+    `).join('');
+    document.getElementById('og-features').innerHTML = featsHtml;
+  </script>
+</body>
+</html>

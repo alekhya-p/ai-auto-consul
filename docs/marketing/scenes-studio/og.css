@@ -1,0 +1,236 @@
+/* ============================================================
+   Auto-Consul OG Card Stylesheet
+   Dimensions: 1200px * 630px
+   Premium dark theme with vibrant teal / indigo glowing accents
+   ============================================================ */
+
+:root {
+  --dark-bg: #0b1220;
+  --teal: #14b8a6;
+  --indigo: #6366f1;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  height: 630px;
+  background-color: var(--dark-bg);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* Container */
+.og-card {
+  width: 1200px;
+  height: 630px;
+  background: 
+    radial-gradient(circle at 95% 10%, rgba(20, 184, 166, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(99, 102, 241, 0.12) 0%, transparent 55%),
+    #0b1220;
+  display: grid;
+  grid-template-columns: 570px 630px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Panel */
+.og-left {
+  padding: 56px 0 56px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.og-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.og-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.og-logo svg {
+  filter: drop-shadow(0 2px 8px rgba(20, 184, 166, 0.3));
+}
+
+.og-logo-text {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.og-badge {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--teal);
+  background: rgba(20, 184, 166, 0.08);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 1.5px;
+}
+
+.og-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: -20px;
+}
+
+.og-title {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.og-desc {
+  color: var(--slate-400);
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0;
+  max-width: 500px;
+}
+
+.og-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.og-features {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.og-feat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--slate-300);
+  font-size: 13.5px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.og-feat-item svg {
+  color: var(--teal);
+  filter: drop-shadow(0 0 4px rgba(20, 184, 166, 0.2));
+}
+
+.og-domain {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--slate-400);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.65;
+}
+
+.og-domain svg {
+  opacity: 0.8;
+}
+
+/* Right Panel / Device Mockups */
+.og-right {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mockup-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mockup-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.10) 0%, rgba(99, 102, 241, 0.05) 50%, transparent 100%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 
+   ============================================================
+   Direct Device Image Stylings
+   (No nested frames or borders needed, since images already have them)
+   ============================================================ 
+*/
+
+/* 1. Main Overlapping Layout */
+.og-img-desktop {
+  position: absolute;
+  top: 85px;
+  right: -10px;
+  width: 530px;
+  height: auto;
+  z-index: 1;
+  transform: perspective(1000px) rotateY(-10deg) rotateX(4deg);
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+}
+
+.og-img-phone {
+  position: absolute;
+  top: 100px;
+  right: 320px;
+  width: 215px;
+  height: auto;
+  z-index: 2;
+  transform: perspective(1000px) rotateY(10deg) rotateX(2deg) translateZ(35px);
+  filter: drop-shadow(-15px 25px 35px rgba(0, 0, 0, 0.5));
+}
+
+/* 2. Chat Layout (Single Phone) */
+.og-img-phone-lg {
+  position: absolute;
+  top: 45px;
+  right: 170px;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+  transform: perspective(1000px) rotateY(-5deg) rotateX(3deg);
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.45));
+}
+
+/* 3. Compare & AI Layouts (Single Desktop Browser) */
+.og-img-desktop-lg {
+  position: absolute;
+  top: 70px;
+  right: -10px;
+  width: 580px;
+  height: auto;
+  z-index: 2;
+  transform: perspective(1000px) rotateY(-10deg) rotateX(4deg);
+  filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.45));
+}
