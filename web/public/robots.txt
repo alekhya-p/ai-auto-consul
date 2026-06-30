@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /v1/
+Disallow: /dashboard
+Disallow: /account
+Disallow: /chat
+Disallow: /compare
+Disallow: /sign-in
+Disallow: /sign-up
+
+Sitemap: https://auto-consul-app-dev.web.app/sitemap.xml

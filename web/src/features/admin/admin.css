@@ -1,0 +1,148 @@
+/* Admin usage analytics page. Admin-only, low-traffic - kept simple and
+   dependency-free (the "charts" are CSS bars in usageBars.tsx). */
+
+.admin-usage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.admin-usage-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.admin-usage-head h1 {
+  margin: 0;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+}
+
+.admin-range {
+  display: inline-flex;
+  gap: 0.25rem;
+  background: var(--canvas);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.2rem;
+}
+.admin-range-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.admin-range-btn.active {
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: none;
+}
+
+.admin-cards {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+.admin-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm, 10px);
+}
+.admin-card-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.admin-card-label {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.admin-panel {
+  margin-bottom: 1.5rem;
+}
+.admin-panel h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+}
+.admin-table th {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.admin-empty,
+.admin-usage-loading {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+.admin-usage-error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+}
+
+/* CSS bars */
+.admin-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.admin-bar-row {
+  display: grid;
+  grid-template-columns: minmax(90px, 160px) 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+.admin-bar-label {
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.admin-bar-track {
+  background: var(--canvas);
+  border-radius: 999px;
+  height: 0.6rem;
+  overflow: hidden;
+}
+.admin-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--navy, #1c69d4);
+  border-radius: 999px;
+}
+.admin-bar-value {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

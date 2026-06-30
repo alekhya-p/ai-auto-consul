@@ -1,0 +1,10 @@
+node_modules/
+# Anchored: only the project-root build-output dir, not src/lib/ which holds
+# shared source modules (admin.ts, mockScenario.ts).
+/lib/
+*.log
+.env
+.env.local
+.firebase/
+firebase-debug.log
+firebase-debug.*.log

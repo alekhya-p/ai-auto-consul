@@ -1,0 +1,95 @@
+/* Split "explainer" scene: narrative panel + device region, with an overlay
+   layer (cursor, ripple, zoom) above everything. Loaded only in scene mode. */
+
+.scene {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  /* FIXED text column so the phone never shifts between scenes regardless of how
+     much copy a beat has: left-gap · text(440) · mid-gap · phone · right-gap. */
+  grid-template-columns: 440px auto;
+  justify-content: start;
+  align-items: center;
+  gap: 56px;                         /* the middle gap */
+  padding: 40px 0 40px 88px;         /* the left gap (88px) */
+}
+.scene[data-side="right"] .scene__narrative { order: 2; }
+
+.scene__narrative { width: 440px; max-width: 440px; }
+.scene[data-side="right"] .scene__narrative { justify-self: end; }
+.scene__brand { display: flex; align-items: center; gap: 10px; margin-bottom: 26px; }
+.scene__brand .logo {
+  width: 34px; height: 34px; border-radius: 9px; color: #fff; font-weight: 700;
+  display: grid; place-items: center; font-size: 19px;
+  background: linear-gradient(135deg, var(--accent, #4f46e5), var(--accent2, #7c3aed));
+}
+/* When an inline SVG brand mark is used, the SVG provides its own tile/fill. */
+.scene__brand .logo--mark { background: none; }
+.scene__brand .logo--mark svg { width: 34px; height: 34px; display: block; }
+.scene__brand b { font-size: 17px; color: #0f172a; }
+
+/* Role badge — tells the viewer whose screens these are (athlete/coach/club). */
+.scene__role {
+  display: inline-flex; align-items: center; gap: 7px;
+  margin: -10px 0 22px; padding: 5px 13px 5px 10px; border-radius: 999px;
+  background: var(--accent-soft, rgba(79,70,229,.16));
+  color: var(--accent2, #4f46e5); font-size: 13px; font-weight: 700; letter-spacing: .01em;
+}
+.scene__role svg { width: 16px; height: 16px; }
+
+.scene__headline {
+  font-size: 40px; line-height: 1.08; font-weight: 700; color: #0f172a;
+  margin: 0 0 16px; letter-spacing: -0.02em;
+  transition: opacity .35s ease, transform .35s ease;
+}
+.scene__sub {
+  font-size: 18px; line-height: 1.5; color: #475569; margin: 0;
+  transition: opacity .35s ease, transform .35s ease;
+}
+/* Reserve a constant height so the copy never re-centres vertically between
+   beats of different length (that vertical shift reads as "shaky" text). */
+.scene__copy { min-height: 176px; }
+/* Pure cross-fade on swap — no slide, so transitions stay smooth. */
+.scene__copy.is-swapping .scene__headline,
+.scene__copy.is-swapping .scene__sub { opacity: 0; }
+
+.scene__device { justify-self: center; }
+.scene[data-side="right"] .scene__device { justify-self: start; }
+/* zoom transform is applied here by studio.js */
+.scene__device-zoom { transition: transform var(--zoom-dur, 700ms) cubic-bezier(.22,.61,.36,1); will-change: transform; }
+
+/* ---- overlay layer (fixed to viewport, above the scene) ---- */
+.demo-cursor {
+  position: fixed; top: 0; left: 0; width: 26px; height: 26px; z-index: 9999;
+  margin: -3px 0 0 -3px; pointer-events: none; opacity: 0; transform: translate(-100px,-100px);
+  transition: transform var(--cursor-dur, 650ms) cubic-bezier(.22,.61,.36,1), opacity .25s ease;
+  filter: drop-shadow(0 2px 4px rgba(15,23,42,.35));
+}
+.demo-cursor.is-on { opacity: 1; }
+.demo-pulse {
+  position: fixed; z-index: 9998; width: 14px; height: 14px; margin: -7px 0 0 -7px;
+  border-radius: 50%; border: 2px solid var(--accent-strong, rgba(79,70,229,.9)); pointer-events: none; opacity: 0;
+}
+.demo-pulse.is-firing { animation: demo-pulse .42s ease-out; }
+@keyframes demo-pulse { 0%{opacity:.9;transform:scale(.4)} 100%{opacity:0;transform:scale(3.2)} }
+
+.demo-ripple {
+  position: fixed; z-index: 9998; width: 26px; height: 26px; margin: -13px 0 0 -13px;
+  border-radius: 50%; background: var(--accent-soft, rgba(79,70,229,.28)); pointer-events: none; opacity: 0;
+}
+.demo-ripple.is-firing { animation: demo-ripple .52s ease-out; }
+@keyframes demo-ripple { 0%{opacity:.7;transform:scale(.3)} 100%{opacity:0;transform:scale(2.6)} }
+
+/* PPT-style highlight: glowing rounded box that eases between targets */
+.demo-highlight {
+  position: fixed; z-index: 9997; border-radius: 14px; pointer-events: none; opacity: 0;
+  border: 3px solid var(--accent, #4f46e5);
+  transition: opacity .28s ease, left .42s cubic-bezier(.22,.61,.36,1),
+    top .42s cubic-bezier(.22,.61,.36,1), width .42s cubic-bezier(.22,.61,.36,1),
+    height .42s cubic-bezier(.22,.61,.36,1);
+}
+.demo-highlight.is-on { opacity: 1; animation: demo-hl 1.3s ease-in-out infinite; }
+@keyframes demo-hl {
+  0%, 100% { box-shadow: 0 0 0 3px var(--accent-soft, rgba(79,70,229,.28)), 0 0 14px var(--accent-strong, rgba(79,70,229,.9)); }
+  50%      { box-shadow: 0 0 0 7px transparent, 0 0 26px var(--accent-strong, rgba(79,70,229,.9)); }
+}

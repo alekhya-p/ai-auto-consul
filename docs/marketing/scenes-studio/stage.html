@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto-Consul scene stage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stage.css" />
+</head>
+<body>
+  <div class="stage" id="stage"></div>
+  <script>
+    const q = new URLSearchParams(location.search);
+    const shell = q.get('shell') || 'browser';
+    const url = q.get('url') || 'about:blank';
+    const host = (() => { try { return new URL(url).host; } catch { return url; } })();
+    const title = q.get('title') || host;
+    const stage = document.getElementById('stage');
+    const sceneMode = q.get('scene') === '1';
+    const side = q.get('side') || 'left';
+    const headline = q.get('headline') || '';
+    const sub = q.get('sub') || '';
+    const brand = q.get('brand') || 'Auto-Consul';
+    const logo = q.get('logo') || 'AC';
+    const accent = q.get('accent') || '#0b1220';
+    const accent2 = q.get('accent2') || '#14b8a6';
+
+    document.documentElement.style.setProperty('--accent', accent);
+    document.documentElement.style.setProperty('--accent2', accent2);
+
+    const ICONS = {
+      lock: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>`,
+      cellular: `<svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0.5" width="3" height="11.5" rx="1"/></svg>`,
+      wifi: `<svg width="17" height="12" viewBox="0 0 17 12" fill="currentColor"><path d="M8.5 1.2C5.4 1.2 2.6 2.4.6 4.4l1.4 1.5C3.7 4.2 6 3.2 8.5 3.2s4.8 1 6.5 2.7L16.4 4.4C14.4 2.4 11.6 1.2 8.5 1.2Zm0 4c-1.9 0-3.6.7-4.9 2l1.4 1.5c1-1 2.2-1.5 3.5-1.5s2.6.5 3.5 1.5l1.4-1.5c-1.3-1.3-3-2-4.9-2Zm0 4c-.8 0-1.5.3-2 .9l2 2.1 2-2.1c-.5-.6-1.2-.9-2-.9Z"/></svg>`,
+      battery: `<svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x="0.5" y="0.5" width="22" height="12" rx="3.5" stroke="currentColor" stroke-opacity="0.4"/><rect x="2" y="2" width="17" height="9" rx="2" fill="currentColor"/><path d="M24.5 4.2c1 .3 1 3.3 0 3.6V4.2Z" fill="currentColor" fill-opacity="0.5"/></svg>`,
+    };
+
+    if (shell === 'phone') {
+      const sbClass = (q.get('statusbar') === 'dark') ? 'statusbar statusbar--dark' : 'statusbar';
+      stage.innerHTML = `
+        <div class="phone">
+          <span class="phone__btn phone__btn--mute"></span>
+          <span class="phone__btn phone__btn--volup"></span>
+          <span class="phone__btn phone__btn--voldn"></span>
+          <span class="phone__btn phone__btn--power"></span>
+          <div class="phone__screen">
+            <div class="island"></div>
+            <div class="${sbClass}">
+              <span class="statusbar__time">9:41</span>
+              <span class="statusbar__right">${ICONS.cellular}${ICONS.wifi}${ICONS.battery}</span>
+            </div>
+            <iframe class="phone__app" src="${url}" allow="geolocation *"
+              referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+            <div class="phone__gloss"></div>
+            <div class="homebar"></div>
+          </div>
+        </div>`;
+    } else {
+      const vw = parseInt(q.get('vw') || '1280', 10);
+      const vh = parseInt(q.get('vh') || '800', 10);
+      const barClass = (q.get('bar') === 'dark') ? 'browser browser--dark' : 'browser';
+      stage.innerHTML = `
+        <div class="${barClass}">
+          <div class="browser__bar">
+            <div class="dots"><span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span></div>
+            <div class="omnibox">${ICONS.lock}<span class="omnibox__url">${title}</span></div>
+            <div class="browser__actions"><span></span><span></span><span></span></div>
+          </div>
+          <div class="viewport" style="width:${vw}px;height:${vh}px">
+            <iframe src="${url}" referrerpolicy="no-referrer" allow="geolocation *"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+          </div>
+        </div>`;
+    }
+
+    if (sceneMode) {
+      const shellHtml = stage.innerHTML;
+      stage.classList.remove('stage');
+      stage.classList.add('scene');
+      stage.setAttribute('data-side', side);
+      stage.innerHTML = `
+        <div class="scene__narrative">
+          <div class="scene__brand"><span class="logo">${logo}</span><b>${brand}</b></div>
+          <div class="scene__copy">
+            <h2 class="scene__headline">${headline}</h2>
+            <p class="scene__sub">${sub}</p>
+          </div>
+        </div>
+        <div class="scene__device"><div class="scene__device-zoom">${shellHtml}</div></div>`;
+      const sc = document.createElement('link');
+      sc.rel = 'stylesheet'; sc.href = 'scene.css'; document.head.appendChild(sc);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1217 @@
+{
+  "admin": {
+    "usage": {
+      "title": "Gebruiksanalyse",
+      "rangeLabel": "Periode",
+      "daysN": "{n} dagen",
+      "loading": "Analyse laden…",
+      "error": "Kon de analyse niet laden.",
+      "empty": "Nog geen gegevens in deze periode.",
+      "truncated": "Resultaat afgekapt. Verklein de periode voor volledige cijfers.",
+      "cards": {
+        "turns": "Chatbeurten",
+        "credits": "Credits gebruikt",
+        "avgPerTurn": "Gem. credits/beurt",
+        "avgTools": "Gem. tools/beurt",
+        "users": "Unieke gebruikers"
+      },
+      "perTool": {
+        "title": "Per tool",
+        "tool": "Tool",
+        "calls": "Aanroepen",
+        "cost": "Credits",
+        "avg": "Gemiddeld"
+      },
+      "cache": { "title": "Cache-hitratio per bron" },
+      "ai": {
+        "title": "AI-telemetrie per model",
+        "model": "Model",
+        "calls": "Aanroepen",
+        "inTok": "Gem. input-tokens",
+        "outTok": "Gem. output-tokens",
+        "latency": "Gem. latency (ms)"
+      },
+      "daily": { "title": "Credits per dag" }
+    }
+  },
+  "brand": "Auto Consul",
+  "topbar": {
+    "back": "← Nieuwe kenteken zoeken",
+    "backDashboard": "← Terug naar dashboard",
+    "center": "Dossier, Editie 2026"
+  },
+  "hero": {
+    "eyebrow": "Tweedehandsauto-intelligentie · Nederland",
+    "titleA": "Laat je niet",
+    "titleEm": "naaien",
+    "titleB": "bij je volgende tweedehandsauto.",
+    "subtitle": "Geknoeide tellerstand. Open terugroepacties. Een korte APK met een reden. Plak het kenteken en wij checken het officiële RDW-register, markeren de risico's en rekenen uit wat de auto je écht per maand kost. De eerste check is gratis.",
+    "placeholder": "Kenteken",
+    "submit": "Check deze auto",
+    "submitting": "Bezig met opzoeken…",
+    "invalid": "Voer een kenteken in (4 tot 8 tekens) om deze auto te checken.",
+    "statsLabel": "Productkenmerken",
+    "stats": {
+      "datasets": "Open datasets gekoppeld",
+      "cache": "Eigen 24-uurs cache",
+      "free": "Anoniem & gratis"
+    },
+    "featuresLabel": "Wat we voor je nakijken",
+    "features": {
+      "rdw": {
+        "title": "RDW-register, volledig vertaald",
+        "body": "APK-historie, NAP-tellerstandoordeel, open terugroepacties, WOK-status, brandstof + emissies. Eén scherm, begrijpelijke taal."
+      },
+      "ai": {
+        "title": "De cijfers die geen verkoper benoemt",
+        "body": "Indicatieve marktwaarde. Maandlasten (MRB + verzekering + brandstof). Milieuzonetoegang tot 2030."
+      },
+      "privacy": {
+        "title": "Betalen pas als jij dat wilt",
+        "body": "Elke kentekencheck is gratis, anoniem en zonder gedoe. Een Single Pas van €4,95 ontgrendelt alléén de AI-verdieping."
+      }
+    }
+  },
+  "reveals": {
+    "label": "Wat we boven water halen",
+    "title": "Zes rode vlaggen die een advertentie verzwijgt.",
+    "subtitle": "Advertenties zijn geoptimaliseerd voor klikken. RDW publiceert wat écht telt. We zetten beide naast elkaar zodat de dingen om je zorgen over te maken bóven aan staan, niet onderaan.",
+    "items": {
+      "mileage": {
+        "title": "Geknoeide tellerstand",
+        "body": "Elke stand wordt door NAP beoordeeld. 'Onlogisch' = doorlopen. We zeggen het luidruchtig, niet in de kleine lettertjes."
+      },
+      "recalls": {
+        "title": "Openstaande terugroepacties",
+        "body": "Veiligheidsupdates van de fabrikant die de vorige eigenaar nooit heeft laten doen. Gratis te fixen, maar gebeurde het ook?"
+      },
+      "wok": {
+        "title": "WOK-status",
+        "body": "RDW vertrouwt deze auto officieel niet meer. We zetten dit boven alles. Nooit kopen."
+      },
+      "apk": {
+        "title": "Korte APK, met een reden",
+        "body": "1-maand-APK-advertenties bestaan omdat de verkoper weet dat de volgende keuring duur wordt. Wij laten dat patroon zien."
+      },
+      "cost": {
+        "title": "Echte maandlasten",
+        "body": "MRB (provincieafhankelijk), verzekeringsklasse, brandstof en bijtelling: de rekening achter de vraagprijs."
+      },
+      "zone": {
+        "title": "Milieuzones, nu én 2030",
+        "body": "Een diesel uit 2014 past vandaag misschien op je route, morgen niet meer. Wij projecteren toegang door tot 2030."
+      }
+    }
+  },
+  "freeVsPaid": {
+    "eyebrow": "Gratis vs Pas",
+    "title": "Gratis tot je écht overweegt te kopen.",
+    "subtitle": "Elke kentekencheck is gratis. Een Single Pas (€4,95) ontgrendelt alléén de AI-verdieping, en alleen als je 'm tot één auto hebt teruggebracht.",
+    "free": {
+      "title": "Gratis, anoniem",
+      "price": "€0",
+      "items": [
+        "Volledig RDW-register: APK, brandstof, emissies, recalls, NAP",
+        "Indicatieve marktwaarde (Autotelex)",
+        "Begrijpelijke feiten, geen RDW-jargon",
+        "5 opvragingen per dag, geen account nodig"
+      ],
+      "cta": "Probeer een kenteken"
+    },
+    "paid": {
+      "title": "Single Pas",
+      "price": "€4,95",
+      "badge": "Meest gekozen",
+      "items": [
+        "Volledige AI-analyse: 7 secties, marktcontext, aandachtspunten",
+        "Maandlastenraming (MRB + verzekering + brandstof + bijtelling)",
+        "Milieuzone-vooruitblik tot 2030",
+        "10 chatvragen over DEZE specifieke auto",
+        "30 dagen geldig · Geen abonnement · Geen kaart opgeslagen"
+      ],
+      "cta": "Alle pakketten"
+    }
+  },
+  "trust": {
+    "eyebrow": "Waarom je dit kunt vertrouwen",
+    "items": {
+      "rdw": {
+        "title": "Officiële RDW-data",
+        "body": "Hetzelfde register dat de politie raadpleegt. We becommentariëren de feiten niet, we vertalen ze."
+      },
+      "ai": {
+        "title": "AI van Anthropic Claude",
+        "body": "Onze AI legt het RDW-dossier uit; hij verzint nooit feiten. Wat RDW niet zegt, zeggen wij ook niet."
+      },
+      "privacy": {
+        "title": "Geen kaart opgeslagen. Nooit.",
+        "body": "Een Single Pas is letterlijk single pass. Geen abonnement, geen auto-renewal, geen kaart op het account. Stripe handelt de betaling af."
+      }
+    }
+  },
+  "marketing": {
+    "showcase": {
+      "eyebrow": "Bekijk het product",
+      "title": "Echte schermen, geen stockfoto's",
+      "subtitle": "Miniaturen van wat je krijgt na een kenteken-check: het volledige RDW-dossier, AI-chat met inline voertuigkaarten, en een account-hub die elke bestede credit laat zien.",
+      "demo": "Voorbeelddata",
+      "dossier": {
+        "label": "Voertuigdossier",
+        "title": "Eén dossier, alle officiële feiten",
+        "body": "Hero-tegels, AI-samenvatting en RDW-secties (algemeen, status, APK-historie) op één scroll. Dezelfde layout als bij een echte opvraging."
+      },
+      "chat": {
+        "label": "AI-chat",
+        "title": "Vraag in gewone taal",
+        "body": "Chat haalt RDW-data als kaarten in het gesprek, beantwoordt vervolgvragen en toont je resterende credits in de header. Geen giswerk meer."
+      },
+      "account": {
+        "label": "Account & gebruik",
+        "title": "Transparant gebruik, geen verrassingen",
+        "body": "Saldo in één oogopslag, actieve pakketten met voortgangsbalken, en een regel-voor-regel gebruikslog (chat, opvragingen, AI-analyse) zodat je altijd weet waarvoor een credit ging."
+      },
+      "compare": {
+        "label": "Auto's vergelijken",
+        "title": "Twee auto's naast elkaar",
+        "body": "Zet twee kentekens tegenover elkaar: prijsband, vermogen, verbruik, APK en tellerstandoordeel in één tabel, met de beste keuze gemarkeerd."
+      },
+      "pdf": {
+        "label": "Dossier.pdf",
+        "title": "Exporteer een verzorgde PDF",
+        "body": "Download het volledige dossier als een verzorgd rapport met officiële RDW-secties plus je AI-analyse, klaar om te delen met partner of monteur."
+      }
+    },
+    "preview": {
+      "dossier": {
+        "model": "BMW 320i",
+        "year": "2019",
+        "fuel": "Benzine",
+        "power": "184 pk",
+        "consumption": "5,8 l/100km",
+        "apk": "dec 2026",
+        "aiTitle": "Snelle AI-indruk · voorbeeld",
+        "aiSnippet": "Sterke onderhoudshistorie; controle achterremmen bij volgende APK. Marktband €22 tot 26k voor deze km-stand.",
+        "rowType": "Voertuigsoort",
+        "valType": "Personenauto",
+        "rowColor": "Kleur",
+        "valColor": "Grijs metallic",
+        "rowNap": "NAP-teller",
+        "valNap": "Logisch",
+        "rowRecall": "Terugroepactie",
+        "valRecall": "Geen",
+        "rowWok": "WOK-status",
+        "valWok": "Geen wantrouwen"
+      },
+      "chat": {
+        "plateTitle": "J-640-HT",
+        "userMsg": "Is de APK-historie schoon en zijn er open recalls?",
+        "agentLead": "Dit geeft RDW voor dit kenteken:",
+        "badgeApk": "APK geldig",
+        "badgeRecall": "Geen recall",
+        "badgeNap": "NAP logisch",
+        "agentTail": "Laatste keuring had alleen lichte adviezen. Vraag de verkoper om facturen."
+      },
+      "account": {
+        "packName": "Single Pas",
+        "when1": "Vandaag, 14:22",
+        "when2": "Gisteren",
+        "when3": "3 dagen geleden"
+      },
+      "compare": {
+        "title": "Twee auto's vergelijken",
+        "sub": "BMW 320i vs Audi A4",
+        "carB": "Audi A4"
+      }
+    }
+  },
+  "how": {
+    "title": "Hoe een check van 4 seconden je €4.000 bespaart.",
+    "lede": "Wij tonen geen meningen. We tonen dezelfde feiten die RDW de politie laat zien, plus een AI-vertaling van wat die feiten betekenen voor je portemonnee, je zonetoegang en je weekenden. Drie stappen.",
+    "step1": {
+      "title": "Plak een Nederlands kenteken",
+      "body": "Letters en cijfers, met of zonder streepjes. We accepteren wat je net uit Marktplaats kopieerde. Account niet nodig."
+    },
+    "step2": {
+      "title": "We halen het officiële register op",
+      "body": "RDW-register, NAP-tellerstandhistorie, volledig APK-dossier, openstaande recalls, brandstofklasse. Alles uit publieke bronnen, in ongeveer een seconde."
+    },
+    "step3": {
+      "title": "Begrijpelijke conclusie",
+      "body": "Indicatieve prijs, aandachtspunten, maandlasten, milieuzonetoegang in 2030. Lees in 60 seconden, beslis in 2 minuten."
+    },
+    "redFlags": {
+      "title": "Acht dingen die wij naar voren halen, en advertenties niet.",
+      "subtitle": "Elke hiervan heeft een koper minstens €1.000 gekost waarvan wij weten. Bij ons staat het bovenaan het dossier, niet onderaan.",
+      "items": [
+        "WOK-status | RDW weigert deze auto te registreren. Doorlopen.",
+        "Tellerstand 'onlogisch' | NAP markeert de teller als gemanipuleerd. Harde nee.",
+        "Open veiligheidsrecall | Fabrikant heeft een fix, deze auto kreeg 'm nooit.",
+        "Korte APK met reden | 1 maand APK na een lange eigenaar = de verkoper ontwijkt een dure rekening.",
+        "Import zonder historie | EU-import op tweede NL-kenteken, geen onderhoudsstempels uit het land van herkomst.",
+        "Verkeerde emissieklasse | Lijkt Euro 6 in de advertentie, staat als Euro 5 bij RDW. Zoneproblemen.",
+        "Verstopte maandlasten | Zware SUV in een provincie met hoge opcenten = €120+/maand alleen al MRB.",
+        "Optimistische verbruikscijfers | Het RDW-verbruik komt zelden overeen met de 'zuinig!' praat van de verkoper."
+      ]
+    },
+    "comparison": {
+      "title": "Gratis werkt om te grasduinen. Een Pas werkt als je serieus bent.",
+      "subtitle": "Gratis is dezelfde RDW-data die de politie ziet. Een Pas voegt AI-context, echte maandlasten en chat over déze specifieke auto toe.",
+      "freeColumn": {
+        "label": "Gratis, anoniem",
+        "items": [
+          "Volledig RDW-dossier (5 datasets)",
+          "Indicatieve marktwaarde",
+          "Open terugroepacties + APK-historie",
+          "5 opvragingen per dag, zonder account"
+        ]
+      },
+      "paidColumn": {
+        "label": "Single Pas · €4,95",
+        "items": [
+          "Alles uit gratis, plus:",
+          "AI-analyse: 7 secties in begrijpelijke taal",
+          "Maandlasten (MRB + verzekering + brandstof)",
+          "Milieuzone-vooruitblik tot 2030",
+          "10 chatvragen over DEZE auto"
+        ]
+      }
+    },
+    "personas": {
+      "title": "Voor wie Auto Consul gebouwd is.",
+      "items": [
+        "Eerste-keer kopers | Je bent geen autokenner en hoeft het ook niet te worden. Wij vertalen RDW naar 'is dit een goede koop of niet?'",
+        "Shortlisters | Drie tabbladen open op Marktplaats? Vergelijk 3 zet ze naast elkaar, met volledige AI per auto.",
+        "Flippers + handelaren | Power 10 dekt tien auto's per maand met chat en onbeperkte opvragingen. Sneller dan jouw Excel."
+      ]
+    },
+    "benefits": {
+      "title": "Wat een Pas écht oplevert.",
+      "items": [
+        "Volledige AI-analyse | Alle 7 secties: marktwaarde, belasting, milieuzones, voor- en nadelen, aandachtspunten, vergelijkbare modellen.",
+        "Chat over de auto | Vraag 'is dit eerlijk?' of 'mag deze in 2030 nog Amsterdam in?' Je krijgt 10 vragen per Single Pas.",
+        "Bewaarde dossiers | Je recente opvragingen volgen je over apparaten heen en overleven cache wissen.",
+        "Echte marktcontext | Autotelex-waardering bovenop RDW voor een geloofwaardige prijsrange.",
+        "Geen abonnement, ooit | Eenmalige aankopen, 30 tot 60 dagen geldig. Geen kaart op het account. Nooit opnieuw geïncasseerd.",
+        "BTW-factuur | Elke aankoop levert een downloadbare Nederlandse BTW-factuur voor je administratie."
+      ]
+    },
+    "cta": {
+      "title": "Probeer het op de auto waar je nu naar staart.",
+      "body": "Typ het kenteken. Krijg het RDW-dossier in één seconde. We laten zien wat een Pas toevoegt; jij beslist of je het nodig hebt.",
+      "lookup": "Check een kenteken",
+      "pricing": "Bekijk prijzen"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Inloggen",
+      "subtitle": "Welkom terug bij Auto Consul.",
+      "google": "Doorgaan met Google",
+      "or": "of",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "submit": "Inloggen",
+      "submitting": "Bezig met inloggen…",
+      "forgot": "Wachtwoord vergeten?",
+      "resetSent": "Als er een account bestaat voor {email}, hebben we een link gestuurd om je wachtwoord opnieuw in te stellen. Check je inbox.",
+      "resetNeedEmail": "Vul eerst je e-mailadres hierboven in en tik daarna op “Wachtwoord vergeten?”.",
+      "altPrompt": "Nog geen account?",
+      "altLink": "Account aanmaken"
+    },
+    "signUp": {
+      "title": "Account aanmaken",
+      "subtitle": "Bewaar dossiers, ontgrendel de AI-analyse en chat over elke auto.",
+      "google": "Doorgaan met Google",
+      "or": "of",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "passwordHint": "Minimaal 6 tekens.",
+      "submit": "Account aanmaken",
+      "submitting": "Account wordt aangemaakt…",
+      "altPrompt": "Heb je al een account?",
+      "altLink": "Inloggen"
+    },
+    "perks": {
+      "ai": "AI-analyse bij elk dossier",
+      "save": "Bewaar dossiers in je dashboard",
+      "chat": "Chat over de auto met Auto Consul"
+    },
+    "errors": {
+      "popup_blocked": "Pop-up geblokkeerd. Sta pop-ups toe op deze site.",
+      "popup_closed": "Inlogvenster werd gesloten.",
+      "invalid_credentials": "E-mail of wachtwoord klopt niet.",
+      "email_in_use": "Er bestaat al een account voor dit e-mailadres.",
+      "weak_password": "Wachtwoord is te zwak (minimaal 6 tekens).",
+      "invalid_email": "Dat e-mailadres ziet er niet geldig uit.",
+      "user_disabled": "Dit account is uitgeschakeld.",
+      "too_many_requests": "Te veel pogingen. Probeer het over een minuut opnieuw.",
+      "network": "Netwerkfout. Controleer je verbinding.",
+      "not_configured": "Inloggen is hier niet geconfigureerd.",
+      "unknown": "Inloggen mislukt."
+    }
+  },
+  "dashboard": {
+    "greeting": "Welkom terug, {name}",
+    "subtitle": "Zoek een voertuig op of ga verder met een dossier dat je al hebt bekeken.",
+    "lookup": {
+      "title": "Nieuwe analyse",
+      "label": "Nederlands kenteken",
+      "placeholder": "bv. 12-AB-34",
+      "submit": "Opzoeken"
+    },
+    "recent": {
+      "title": "Je recente dossiers",
+      "loading": "Dossiers laden…",
+      "empty": "Nog geen dossiers. Voer hierboven een kenteken in om te starten.",
+      "unknownModel": "Onbekend model",
+      "remove": "Verwijder {plate} uit recent",
+      "clearAll": "Alles wissen",
+      "clearConfirm": "Alle recente dossiers wissen? Dit verwijdert ze van dit apparaat en (als je bent ingelogd) uit je opgeslagen lijst."
+    },
+    "banner": {
+      "paidOk": "Betaling ontvangen. Je credits zijn zo beschikbaar.",
+      "paidCancel": "Betaling geannuleerd, er is niets afgeschreven.",
+      "verifyEmail": "We hebben een verificatielink naar {email} gestuurd. Bevestig om aankopen te ontgrendelen.",
+      "verifyResend": "Opnieuw sturen",
+      "verifyResent": "Verstuurd. Kijk in je inbox.",
+      "verifyError": "Kon nu niet opnieuw versturen. Probeer het over een minuut."
+    },
+    "compare": {
+      "start": "Vergelijken",
+      "cancel": "Annuleren",
+      "selected": "{n} auto's geselecteerd",
+      "go": "Vergelijk {n} auto's"
+    }
+  },
+  "nav": {
+    "primary": "Hoofdmenu",
+    "menu": "Menu",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "home": "Start",
+    "how": "Hoe het werkt",
+    "pricing": "Prijzen",
+    "about": "Over ons",
+    "blog": "Blog",
+    "signIn": "Inloggen",
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "account": "Account",
+    "signOut": "Uitloggen",
+    "signedInAs": "Ingelogd als",
+    "userMenu": "Accountmenu openen",
+    "compare": "Vergelijk",
+    "mobile": {
+      "label": "Onderbalk navigatie",
+      "home": "Home",
+      "compare": "Vergelijk",
+      "chat": "Chat",
+      "account": "Account"
+    }
+  },
+  "about": {
+    "title": "Een eerlijke co-piloot voor Nederlandse tweedehandsauto-kopers.",
+    "lede": "Een tweedehandsauto kopen in Nederland hoort geen woordenlijst te vereisen. WOK, BPM, milieuzone, Euro 6d-TEMP: niets daarvan zou tussen jou en een eerlijke beslissing moeten staan. Wij doen de vertaling.",
+    "mission": {
+      "title": "Waarom dit bestaat",
+      "body": "Marktplaats en de grote dealerportalen optimaliseren voor klikken, niet voor kopers. RDW publiceert de waarheid al (openbaar, gratis, gestructureerd), maar het ligt verspreid over twaalf pagina's en is geschreven voor keurmeesters. Wij rijgen het aan elkaar, leggen een AI-vertaling erover, en zetten de dingen om je zorgen over te maken bóven de dingen om te bewonderen."
+    },
+    "principles": {
+      "title": "Waar wij voor staan",
+      "items": [
+        "Alleen feiten met bron | Elke regel data verwijst terug naar RDW of een genoemde derde partij. Onze AI legt uit, verzint niets.",
+        "Geen abonnement | Single Pas, Vergelijk 3, Power 10: elk pakket is een eenmalige aankoop. Je kaart wordt nooit opgeslagen.",
+        "Privacy als standaard | Geen tracking-cookies, geen doorverkoop van je zoekopdrachten. De eerste 5 opvragingen per dag vereisen helemaal geen account.",
+        "Gebouwd voor NL | Nederlandse BTW-facturen, Nederlandse belastingregels, Nederlandse milieuzone-regels. We antwoorden in het Nederlands als je mailt."
+      ]
+    },
+    "data": {
+      "title": "Waar de data vandaan komt",
+      "body": "RDW Open Data dekt registratie, APK, brandstof, CO₂, terugroepacties en NAP-tellerstandoordeel. Autotelex Vehicle Data API levert de indicatieve marktwaarde. AI-samenvattingen komen van Anthropic Claude met RDW als grondwaarheid. We genereren geen feiten, we vertalen ze naar begrijpelijke taal."
+    },
+    "contact": {
+      "title": "Vragen, feedback, restituties?",
+      "body": "Stuur ons een berichtje. We lezen elk bericht en reageren binnen één werkdag."
+    }
+  },
+  "blog": {
+    "title": "Lees dit voordat je de aanbetaling overmaakt.",
+    "subtitle": "Begrijpelijke uitleg over Nederlandse autobelasting, RDW-data, APK-historie, milieuzones en de kleine lettertjes die geen advertentie noemt. Geschreven voor kopers, niet voor SEO-bots.",
+    "readTime": "{n} min leestijd",
+    "comingSoon": "Binnenkort",
+    "backToIndex": "Alle artikelen",
+    "notFound": {
+      "title": "Artikel niet gevonden",
+      "body": "Het is mogelijk verplaatst of heeft nooit bestaan. De index hieronder bevat alles wat we hebben gepubliceerd."
+    },
+    "cta": {
+      "title": "Probeer het op de auto waar je nu naar kijkt.",
+      "body": "Auto Consul geeft je het RDW-dossier en een indicatieve marktwaarde gratis. Een Single Pas van €4,95 ontgrendelt de AI-analyse en chat voor één specifieke auto.",
+      "lookup": "Check een kenteken",
+      "pricing": "Bekijk prijzen"
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "eyebrow": "Welkom",
+      "title": "Je welkomstpakket is actief",
+      "body": "Je kunt meteen een volledige AI-analyse en chat over een auto doen, geen kaart nodig.",
+      "perk1": "1 data-credit voor een diepe dossieranalyse",
+      "perk2": "3 chatvragen over je eerste auto",
+      "perk3": "Onbeperkt gratis RDW-opzoekingen per dag",
+      "ctaChat": "Open chat",
+      "dismiss": "Naar dashboard"
+    }
+  },
+  "compare": {
+    "eyebrow": "Vergelijken",
+    "title": "Vergelijking naast elkaar",
+    "subtitle": "{n} auto's vergeleken.",
+    "emptyHelp": "Voeg ?plates=ABC123,XYZ789 toe aan de URL, of kies auto's vanuit het dashboard.",
+    "empty": {
+      "headline": "Nog niets om te vergelijken.",
+      "body": "Vergelijk zet twee of drie auto's naast elkaar met dezelfde RDW-data, dezelfde AI-analyse en dezelfde maandlastenberekening. Kies de auto's die je overweegt, uit je bewaarde dossiers of een nieuwe kentekencheck, en de vergelijking verschijnt hier.",
+      "cta": "Kies auto's uit je dashboard",
+      "lookup": "Zoek een nieuw kenteken"
+    },
+    "tierLimit": "Je {tier}-pakket dekt AI-analyse voor {aiCount} van de {total} auto's. De rest toont alleen RDW-data.",
+    "upgradeLink": "Upgrade om meer te vergelijken.",
+    "locked": {
+      "title": "Vergelijken vereist een pakket",
+      "body": "Vergelijken naast elkaar zit in elk betaald pakket. Single Pas dekt één volledige auto, Vergelijk 3 ontgrendelt drie, Power 10 tien.",
+      "cta": "Bekijk prijzen"
+    },
+    "guestPreview": {
+      "banner": "Officiële RDW-data naast elkaar. Meld je aan voor AI-oordelen en maandlasten.",
+      "cta": "Gratis aanmelden"
+    },
+    "freePreview": {
+      "banner": "RDW-vergelijking is gratis. Met een pakket ontgrendel je AI-samenvattingen per kolom.",
+      "cta": "Bekijk prijzen"
+    },
+    "paywall": {
+      "trigger": "Ontgrendel AI-vergelijking",
+      "title": "AI-vergelijking vereist een pakket",
+      "body": "Elk betaald pakket bevat AI naast elkaar: marktwaarde, voor- en nadelen en onderhandelingstips per auto.",
+      "cta": "Bekijk prijzen",
+      "dismiss": "Alleen RDW houden"
+    },
+    "col": {
+      "metric": "Detail"
+    },
+    "group": {
+      "identity": "Identiteit",
+      "legal":    "Juridisch & status",
+      "engine":   "Motor & emissies",
+      "body":     "Carrosserie & afmetingen",
+      "cost":     "Maandlasten (indicatief)",
+      "ai":       "AI-analyse"
+    },
+    "row": {
+      "brand": "Merk",
+      "model": "Model",
+      "variant": "Uitvoering",
+      "year": "Eerste registratie",
+      "firstNl": "Eerste NL-registratie",
+      "colour": "Hoofdkleur",
+      "imported": "Geïmporteerd",
+      "apk": "APK geldig tot",
+      "insured": "WA verzekerd",
+      "recall": "Openstaande terugroepactie",
+      "taxi": "Taxi-historie",
+      "exported": "Geëxporteerd",
+      "fuel": "Brandstof",
+      "power": "Vermogen",
+      "displacement": "Cilinderinhoud",
+      "co2": "CO₂ (gecombineerd)",
+      "consumption": "Verbruik (gecombineerd)",
+      "emissionClass": "Emissieklasse",
+      "energyLabel": "Energielabel",
+      "bodyType": "Carrosserietype",
+      "seats": "Zitplaatsen",
+      "doors": "Deuren",
+      "kerbWeight": "Massa ledig",
+      "maxTowBraked": "Max. trekgewicht (geremd)",
+      "costTotal": "Totaal / maand",
+      "costMrb": "Wegenbelasting (MRB)",
+      "costFuel": "Brandstof",
+      "costInsurance": "Verzekering",
+      "costMaintenance": "Onderhoud",
+      "costApk": "APK-reservering",
+      "value": "Geschatte waarde",
+      "summary": "AI-samenvatting"
+    },
+    "value": {
+      "yes": "Ja",
+      "no": "Nee"
+    },
+    "collapse": {
+      "show": "{n} velden komen overeen, toon",
+      "hide": "{n} velden komen overeen, verberg",
+      "hint": "Gelijk voor alle gekozen auto's"
+    },
+    "ai": {
+      "loading": "Analyseren…",
+      "skipped": "Upgrade om te ontgrendelen",
+      "error": "AI niet beschikbaar"
+    }
+  },
+  "chat": {
+    "focus": {
+      "title": "Chat",
+      "plateTitle": "Chat · {plate}",
+      "backAria": "Terug naar dashboard",
+      "closeAria": "Chat sluiten"
+    },
+    "eyebrow": "Chat",
+    "title": "Praat met Auto Consul",
+    "newChat": "Nieuwe chat",
+    "history": {
+      "toggle": "Geschiedenis ({n})",
+      "label": "Recente chats",
+      "empty": "Nog geen eerdere chats. Je gesprekken verschijnen hier.",
+      "untitled": "Naamloze chat",
+      "delete": "Chat verwijderen: {title}"
+    },
+    "sidebar": {
+      "close": "Sluiten"
+    },
+    "you": "Jij",
+    "consul": "Consul",
+    "threadLabel": "Chatgesprek",
+    "hint": "Tip: plak een kenteken (bv. 12-AB-345) of beschrijf de auto waar je aan denkt.",
+    "empty": {
+      "title": "Wat zal ik voor je nakijken?",
+      "body": "Vraag over elk Nederlands kenteken, vergelijk auto's, of beschrijf een advertentie. Ik haal RDW-data, marktwaarde en fiscale gevolgen op.",
+      "bodyPlate": "Je bekijkt {plate}. Vraag over APK, recalls, kosten of of de vraagprijs klopt.",
+      "suggestionsLabel": "Probeer een van deze:"
+    },
+    "suggestionsForPlate": {
+      "0": "Vat het RDW-dossier samen voor {plate}",
+      "1": "Open recalls of WOK op {plate}?",
+      "2": "Waar moet ik op letten vóór aankoop van {plate}?",
+      "3": "Is de vraagprijs fair voor {plate}?"
+    },
+    "suggestions": [
+      "Wat kun je me vertellen over kenteken 12-AB-345?",
+      "Ik vergelijk een 2019 BMW 320i en een Audi A4. Waar moet ik op letten?",
+      "Is deze PHEV de moeite waard voor 25.000 km/jaar?",
+      "Hoe ziet de APK-historie er uit voor kenteken 06-PB-LF?"
+    ],
+    "cache": {
+      "updated": "Bijgewerkt {when} (cache)"
+    },
+    "composer": {
+      "label": "Je bericht",
+      "placeholder": "Vraag iets: plak een kenteken, vergelijk auto's, vraag door…",
+      "placeholderPlate": "Vraag over {plate}…",
+      "send": "Verstuur",
+      "stop": "Stop",
+      "sending": "Bezig…"
+    },
+    "meter": {
+      "credits": "Credits",
+      "chat": "Chat",
+      "accountHint": "Pakketten en gebruik in Account",
+      "summaryAria": "{credits} credits en {chatTurns} chatvragen over"
+    },
+    "platePin": {
+      "label": "Gesprek over",
+      "clear": "Kentekencontext wissen"
+    },
+    "activity": {
+      "label": "Tool-activiteit",
+      "title": "Activiteit",
+      "toggle": "{n} tool-aanroepen",
+      "empty": "Tool-aanroepen (en wat ze aan credits kosten) verschijnen hier terwijl ik werk.",
+      "running": "bezig…",
+      "done": "klaar"
+    },
+    "upgrade": {
+      "chatTitle": "Dagelijkse chatlimiet bereikt",
+      "chatBody": "Je hebt vandaag al je gratis chatvragen gebruikt. Upgrade je pakket om door te gaan. Single Pas €4,95 dekt 10 vragen op één dossier.",
+      "turnsTitle": "Je gratis berichten zijn op",
+      "turnsBody": "Je hebt je chatberichten voor nu gebruikt. Koop credits om verder te gaan met Auto-Consul. Je opgeslagen gesprekken blijven bewaard.",
+      "creditsTitle": "Geen credits meer",
+      "creditsBody": "Deze vraag vereist een credit maar je pakket is leeg. Top op of koop een groter pakket om door te gaan.",
+      "cta": "Bekijk prijzen",
+      "turnsCta": "Bekijk pakketten",
+      "accountLink": "Account beheren"
+    },
+    "errors": {
+      "rateLimited": "Dagelijkse chatlimiet bereikt. Probeer morgen opnieuw of upgrade je pakket.",
+      "generic": "Er ging iets mis. Opnieuw proberen?"
+    }
+  },
+  "dailyLimit": {
+    "rdw": {
+      "title": "Je hebt vandaag al {limit} gratis RDW-opvragingen gedaan",
+      "body": "Gratis tier geeft je {limit} dossier-opvragingen per dag. Een Single Pas €4,95 verhoogt de limiet en ontgrendelt de volledige AI-analyse voor één auto."
+    },
+    "ai": {
+      "title": "Je hebt vandaag al {limit} AI-analyses gedaan",
+      "body": "Gratis tier dekt {limit} AI-analyses per dag. Een betaald pakket verhoogt de limiet en geeft je het volledige 7-secties rapport voor elke auto."
+    },
+    "perks": {
+      "unlimited": "Onbeperkte RDW-opvragingen",
+      "chat": "Chat over elke auto (10 vragen per pakket)",
+      "fullAi": "Volledige AI-analyse met alle 7 secties"
+    },
+    "dismiss": "Misschien later",
+    "cta": "Bekijk prijzen"
+  },
+  "account": {
+    "eyebrow": "Account",
+    "title": "Jouw account",
+    "lead": "Credits, chatgeschiedenis en facturatie op één plek.",
+    "balance": {
+      "title": "Wat je nog hebt",
+      "empty": "Geen actief pakket. Gratis dagelijkse opvragingen blijven beschikbaar.",
+      "creditsHint": "Voor RDW-data en volledige AI-analyse",
+      "chatHint": "Berichten die je in Chat kunt sturen"
+    },
+    "quick": {
+      "label": "Snelkoppelingen",
+      "chat": "Open chat",
+      "pricing": "Koop een pakket",
+      "dashboard": "Dashboard"
+    },
+    "sections": {
+      "passesLead": "Eenmalige pakketten. Het oudste pakket wordt eerst verbruikt.",
+      "usageLead": "Recente tool-aanroepen en chatberichten die credits kostten.",
+      "settings": "Profiel & facturatie"
+    },
+    "signOut": "Uitloggen",
+    "tier": {
+      "free":  "Gratis tier, beperkt aantal opvragingen per dag",
+      "pass":  "Actief pakket, credits hieronder",
+      "pro":   "Pro-tier, power pakket actief",
+      "power": "Power-tier, volledige toegang"
+    },
+    "stats": {
+      "label": "Accountstatistieken",
+      "credits": "Credits over",
+      "chatTurns": "Chatvragen over",
+      "activePasses": "Actieve pakketten"
+    },
+    "passes": {
+      "title": "Je pakketten",
+      "loading": "Pakketten laden…",
+      "loadError": "Kon je pakketten niet laden. Vernieuw de pagina.",
+      "empty": "Nog geen actieve pakketten.",
+      "browse": "Bekijk prijzen",
+      "buyMore": "Nog een pakket kopen",
+      "credits": "Data-credits",
+      "chatTurns": "Chatvragen",
+      "expires": "Verloopt {date}",
+      "daysLeft": "Nog {n} dagen",
+      "noExpiry": "Geen vervaldatum",
+      "consumesFirst": "Wordt eerst verbruikt"
+    },
+    "chats": {
+      "title": "Chatgeschiedenis",
+      "new": "Nieuwe chat",
+      "loading": "Chats laden…",
+      "empty": "Nog geen opgeslagen chats. Start een gesprek in Chat.",
+      "clearAll": "Alle chats wissen",
+      "clearHint": "Verwijdert alleen chatthreads. Je account, pakketten en facturatie blijven staan.",
+      "clearConfirm": "Alle opgeslagen chatthreads op dit apparaat en de server verwijderen?",
+      "delete": "Chat verwijderen"
+    },
+    "usage": {
+      "free": "Gratis",
+      "title": "Gebruiksgeschiedenis",
+      "loading": "Gebruik laden…",
+      "empty": "Nog geen tool-aanroepen. Credits verschijnen hier zodra je auto's gaat analyseren.",
+      "showMore": "Meer tonen",
+      "showLess": "Minder tonen",
+      "col": {
+        "when": "Wanneer",
+        "tool": "Tool",
+        "plate": "Kenteken",
+        "cost": "Kosten",
+        "balance": "Saldo na"
+      },
+      "tool": {
+        "aiAnalysisLite": "AI-analyse (lite)",
+        "aiAnalysisDeep": "AI-analyse (volledig)",
+        "rdwFetch": "RDW-opvraging",
+        "webSearch": "Webzoekopdracht",
+        "suggestCompare": "Vergelijking",
+        "suggestFollowups": "Vervolgvragen",
+        "chatTurn": "Chatbericht"
+      }
+    },
+    "billing": {
+      "title": "Facturatie & rekeningen",
+      "body": "Beheer betaalmethoden, download BTW-facturen of bekijk je betalingsgeschiedenis via het Stripe-portaal.",
+      "cta": "Facturatie beheren",
+      "opening": "Portaal openen…",
+      "noHistory": "Nog geen factuurgeschiedenis. Koop eerst een pakket."
+    },
+    "portal": {
+      "error": "Kon het portaal niet openen. Probeer het opnieuw."
+    },
+    "verify": {
+      "verified": "E-mail bevestigd",
+      "unverified": "E-mail niet bevestigd",
+      "ariaVerified": "E-mailadres bevestigd",
+      "ariaUnverified": "E-mailadres nog niet bevestigd",
+      "resend": "Opnieuw versturen",
+      "sending": "Versturen…",
+      "refresh": "Net bevestigd, ververs",
+      "refreshing": "Verversen…",
+      "sent": "Verstuurd. Kijk in je inbox.",
+      "stillUnverified": "Nog niet bevestigd. Open de link in de e-mail.",
+      "error": "Er ging iets mis. Probeer het opnieuw."
+    },
+    "delete": {
+      "title": "Account verwijderen",
+      "body": "Verwijdert je account, bewaarde dossiers, chatgeschiedenis en actieve pakketten. Dit kan niet ongedaan worden gemaakt.",
+      "cta": "Mijn account verwijderen",
+      "modalTitle": "Account verwijderen?",
+      "modalWarning": "Dit is definitief. Na bevestiging wordt het volgende verwijderd:",
+      "bullet1": "Je inlog (je wordt direct uitgelogd)",
+      "bullet2": "Je bewaarde dossiers + chatgeschiedenis",
+      "bullet3": "Actieve pakketten. Ongebruikte credits worden NIET automatisch teruggeboekt; mail eerst support voor restitutie.",
+      "confirmLabel": "Typ {email} om te bevestigen",
+      "cancel": "Annuleren",
+      "confirm": "Definitief verwijderen",
+      "deleting": "Verwijderen…",
+      "mismatch": "E-mail komt niet overeen. Probeer opnieuw.",
+      "error": "Kon het account niet verwijderen. Probeer opnieuw of neem contact op met support."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Eenmalig. Per auto.",
+    "title": "Geen abonnement. Geen kaart bewaard. Nooit.",
+    "subtitle": "Koop alleen een pakket als je een AI-verdieping op een specifieke auto wilt. 5 gratis RDW-opvragingen per dag zitten er altijd in, ook zonder account. Elk pakket is een eenmalige aankoop.",
+    "tiers": "Prijspakketten",
+    "popular": "Meest gekozen",
+    "saving": "Bespaar {amount} t.o.v. losse pas",
+    "buy": "Nu kopen",
+    "buying": "Doorsturen…",
+    "features": {
+      "credits": "{n} data-credits",
+      "chatTurns": "{n} chatvragen",
+      "validity": "Geldig voor {n} dagen"
+    },
+    "pack": {
+      "SINGLE":   { "name": "Single Pas",  "audience": "Voor die ene auto die je hebt overgehouden." },
+      "COMPARE3": { "name": "Vergelijk 3", "audience": "Drie Marktplaats-tabs tegelijk open? Dit ben jij." },
+      "POWER10":  { "name": "Power 10",    "audience": "Voor dealers en flippers: 10 auto's per maand, met chat." }
+    },
+    "creditsTable": {
+      "title": "Wat is een credit, in mensentaal?",
+      "intro": "RDW-opvragingen zijn altijd gratis. Een credit gaat er pas vanaf als we een betaalde externe bron raadplegen. Chat wordt apart geteld, zodat je nooit midden in een gesprek zonder zit.",
+      "tool": "Tool",
+      "cost": "Credits",
+      "rdw": "RDW-opvraag (officieel, gratis bron)",
+      "autotelex": "Autotelex-dossier (cache miss)",
+      "vin": "VIN-historie rapport",
+      "pdf": "Finance PDF-audit",
+      "vision": "Foto-schadescan",
+      "tco": "TCO-calculator",
+      "aiAnalysis": "Volledige AI-analyse (diepe dossier)",
+      "chat": "Chatvraag",
+      "chatNote": "Telt mee voor het chatvragen-budget van het pakket",
+      "comingSoon": "binnenkort"
+    },
+    "freeTier": {
+      "title": "Gratis tier, daadwerkelijk bruikbaar",
+      "body": "Vijf RDW-opvragingen en vijf chatvragen per dag, zonder account. Maak (gratis) een account aan en dat wordt het dubbele, plus drie bewaarde dossiers."
+    },
+    "trust": {
+      "label": "Waarom je dit kunt vertrouwen",
+      "stripe": "Betaling via Stripe. Je kaartgegevens komen niet bij ons binnen.",
+      "refund": "14 dagen retourrecht volgens Nederlands consumentenrecht (ongebruikte credits)",
+      "nl": "Gebouwd voor de Nederlandse markt. Elke factuur met BTW."
+    },
+    "faq": {
+      "title": "Echte vragen, echte antwoorden",
+      "q": {
+        "refund": "Kan ik mijn aankoop terugkrijgen?",
+        "expiry": "Wat gebeurt er als mijn pakket verloopt?",
+        "tax":    "Zijn de prijzen inclusief BTW?",
+        "cancel": "Hoe zeg ik op?",
+        "data":   "Waar komen de gegevens vandaan?"
+      },
+      "a": {
+        "refund": "Ja. Nederlands consumentenrecht geeft je 14 dagen bedenktijd. Ongebruikte credits worden volledig terugbetaald; we rekenen alleen wat je gebruikt hebt. Mail support@autoconsul.nl met je ordernummer.",
+        "expiry": "Ongebruikte credits vervallen op de datum die op je dashboard staat. We sturen 3 dagen vooraf een herinnering. Koop op elk moment een nieuw pakket en credits stapelen, ze vervangen elkaar niet.",
+        "tax":    "Ja. Elke prijs is inclusief 21% Nederlandse BTW. Je Stripe-factuur bevat de BTW-uitsplitsing voor je administratie of declaratie.",
+        "cancel": "Niets op te zeggen. Pakketten zijn eenmalige aankopen. We bewaren je kaart nooit en schrijven nooit opnieuw af tenzij je actief een nieuw pakket koopt.",
+        "data":   "RDW Open Data voor de gratis tier (registratie, APK, brandstof, emissies, recalls). Autotelex voor de betaalde marktwaarde + dossierverrijking. AI-samenvattingen van Anthropic Claude met RDW als grondwaarheid."
+      }
+    },
+    "reason": {
+      "chat":    "👋 Chatten vereist een pakket. Single Pas €4,95 ontgrendelt 10 vragen op één volledig dossier.",
+      "compare": "👋 Vergelijken naast elkaar vereist een pakket. Vergelijk 3 dekt drie auto's; Power 10 tien.",
+      "ai":      "👋 Volledige AI-analyse vereist een pakket. Single Pas €4,95 ontgrendelt alle 7 secties voor één auto.",
+      "lookup":  "👋 Je hebt vandaag al 5 gratis RDW-opvragingen gedaan. Elk pakket ontgrendelt onbeperkte opvragingen.",
+      "credits": "👋 Je credits zijn op. Vul aan met een nieuw pakket om door te gaan."
+    },
+    "errors": {
+      "unknown": "Kon de checkout niet starten. Probeer het opnieuw.",
+      "verifyEmailFirst": "Bevestig eerst je e-mailadres. Kijk in je inbox of gebruik de Opnieuw-sturen-knop op je dashboard."
+    }
+  },
+  "voertuig": {
+    "loading": "Bezig met ophalen bij RDW…",
+    "notFound": "{plate} staat niet in het RDW register. Geïmporteerd, gesloopt, of overgeschreven?",
+    "compare": {
+      "title": "Vergelijk met een andere auto",
+      "body": "Naast elkaar: merk, brandstof, APK, geschatte waarde en onze AI-conclusie.",
+      "label": "Ander kenteken",
+      "placeholder": "12-AB-345",
+      "go": "Vergelijken",
+      "guestTitle": "Vergelijk twee auto's (gratis RDW)",
+      "guestBody": "Meld je aan voor officiële RDW-data naast elkaar. Voeg een tweede kenteken toe en AI-vergelijking ontgrendel je met een pas.",
+      "guestCta": "Aanmelden om te vergelijken"
+    },
+    "lite": {
+      "title": "Snelle AI-indruk van {plate}",
+      "badge": "Gratis · Lite",
+      "loading": "Korte samenvatting wordt gemaakt…",
+      "deepCta": "Open volledige chat voor diepe analyse"
+    },
+    "export": {
+      "panelTitle": "Dossier exporteren · {plate}",
+      "panelLead": "Download een PDF met officiële RDW-data, je gratis AI-samenvatting en eventuele volledige analyse. Inclusief woordenlijst van badges en velden.",
+      "title": "Auto Consul voertuigdossier",
+      "generated": "Gegenereerd",
+      "plate": "Kenteken",
+      "sectionLite": "AI-samenvatting (lite)",
+      "sectionDeep": "Volledige AI-analyse",
+      "glossaryTitle": "Woordenlijst: badges en velden",
+      "badgeDeep": "Volledige AI · 1 credit",
+      "disclaimer": "Indicatief rapport op basis van publieke RDW-data en AI. Controleer altijd vóór aankoop. Auto Consul is niet aansprakelijk voor beslissingen op basis van deze export.",
+      "exportPdf": "Exporteer PDF",
+      "exporting": "Voorbereiden…",
+      "deepCta": "Volledige analyse (1 credit)",
+      "deepLoading": "Analyseren…",
+      "deepProgress": "Bezig met de volledige analyse. Dit duurt meestal 5 tot 10 seconden. Je kunt deze pagina verlaten; hij staat er weer als je terugkomt.",
+      "deepResuming": "We pakken de analyse op die je startte. Bijna klaar…",
+      "deepReady": "Volledige analyse geladen",
+      "deepError": "Kon volledige analyse niet laden.",
+      "needsUpgrade": "Geen credits meer voor een volledige analyse.",
+      "buyCredits": "Credits kopen",
+      "pdfHint": "Het afdrukvenster opent. Kies Opslaan als PDF. Laad eerst de volledige analyse als je die in het bestand wilt.",
+      "rowYear": "Eerste toelating",
+      "rowRecall": "Open terugroepactie",
+      "rowWok": "WOK-wantrouwen",
+      "rowNap": "NAP-teller",
+      "rowSeats": "Zitplaatsen",
+      "rowDoors": "Deuren",
+      "yes": "Ja",
+      "no": "Nee",
+      "marketRange": "Marktband",
+      "redFlags": "Rode vlaggen",
+      "pros": "Voordelen",
+      "cons": "Nadelen",
+      "checkBefore": "Controleer vóór aankoop",
+      "reliability": "Betrouwbaarheid",
+      "recalls": "Terugroepacties",
+      "tax": "Belasting",
+      "zones": "Milieuzones",
+      "negotiation": "Onderhandelingspunten",
+      "glossary": [
+        "RDW · Officieel|Data uit het Nederlandse voertuigregister (RDW). Leidend voor status, APK en recalls.",
+        "AI · Indicatief|Gegenereerde samenvatting, geen garantie. Lite is gratis ingelogd; volledige analyse kost 1 credit.",
+        "APK|Periodieke keuring. Korte geldigheid kan betekenen dat de verkoper dure reparaties verwacht.",
+        "NAP|Nationale tellerstand. \"Logisch\" is goed; \"Onlogisch\" is een serieuze rode vlag.",
+        "WOK|Officieel wantrouwen. Koop geen auto met actieve WOK-status.",
+        "Terugroepactie|Veiligheidscampagne van de fabrikant die nog niet is uitgevoerd."
+      ]
+    },
+    "section": {
+      "algemeen": "Algemene informatie",
+      "status": "Status",
+      "motorMilieu": "Motor en milieu",
+      "carrosserie": "Carrosserie & massa",
+      "apkHistorie": "APK historie",
+      "marktaanbod": "Vergelijkbare auto's te koop in NL",
+      "rdwSupporting": "Onderbouwende RDW gegevens"
+    },
+    "badge": {
+      "rdw": "RDW · Officieel",
+      "ai": "AI · Indicatief",
+      "marktaanbod": "Marktaanbod · Live extern"
+    },
+    "ai": {
+      "lockedTitle": "Auto Consul AI-analyse",
+      "lockedSubtitle": "Gratis tijdens lancering. Meld je aan en zie:",
+      "lockedBullets": [
+        "Geschatte marktwaarde (bereik)",
+        "Vergelijking met huidige modellen",
+        "Nederlandse belastingvoordelen",
+        "Milieuzones en toekomstige beperkingen",
+        "Voor- en nadelen op een rij",
+        "Chat met Auto Consul over deze auto"
+      ],
+      "lockedCta": "Account aanmaken, gratis tijdens lancering",
+      "haveAccount": "Ik heb al een account",
+      "locked": {
+        "intro": "Wil je meer? Een Single Pas ontgrendelt het volledige rapport voor deze auto:",
+        "cta": "Ontgrendel volledige analyse voor €4,95"
+      },
+      "teaser": {
+        "headline": "Bekijk de volledige analyse",
+        "sub": "Risicoscore, te controleren punten, onderhandelingsruimte en 4 secties meer, voor deze specifieke auto.",
+        "cta": "Ontgrendel voor €4,95",
+        "riskScore": "Risicoscore",
+        "issuesFound": "Te controleren punten",
+        "negotiationRoom": "Onderhandelingsruimte",
+        "bpmTax": "Geschatte BPM / belasting",
+        "fakeProse": "Deze BMW 318i uit 2016 heeft een gemiddeld kostenprofiel typisch voor F30-generatie benzine sedans. Een paar APK-opmerkingen suggereren specifieke controlepunten, en de vraagprijzenrange laat onderhandelingsruimte.",
+        "point1": "Recente APK-opmerking remmen, controleer pads/schijven",
+        "point2": "F30 N20 motor: check distributiekettinghistorie (bekend issue)",
+        "point3": "Onder de mediaan vraagprijs voor vergelijkbare uitvoeringen in de regio"
+      },
+      "limit": {
+        "body": "Je hebt vandaag al {limit} gratis AI-analyses gedaan. Een Single Pas verhoogt de daglimiet en ontgrendelt het volledige rapport.",
+        "cta": "Ontgrendel onbeperkt voor €4,95"
+      },
+      "card": {
+        "title": "Auto Consul AI-analyse",
+        "generatedAt": "Gegenereerd op {date}",
+        "samenvatting": "Samenvatting",
+        "marktwaarde": "Geschatte marktwaarde",
+        "vergelijking": "Vergelijking met huidige modellen",
+        "belastingvoordelen": "Belasting en bijtelling",
+        "milieuzones": "Milieuzones en toekomstige beperkingen",
+        "concurrenten": "Vergelijkbare modellen",
+        "aandachtspunten": "Aandachtspunten bij aankoop",
+        "voordelen": "Voordelen",
+        "nadelen": "Nadelen",
+        "overigeOpmerkingen": "Overige opmerkingen",
+        "disclaimer": "Indicatief, geen taxatie of juridisch advies. Verifieer voor bindende beslissingen bij RDW, Belastingdienst of een onafhankelijk expert.",
+        "comingSoon": "AI-analyse komt binnenkort beschikbaar. We zijn de Vertex AI-koppeling nog aan het wiren. Schrijf je in via de header zodra je een Google-account hebt en je krijgt de eerste analyse zodra hij live gaat.",
+        "rateLimited": "Je hebt je dagelijkse limiet van AI-analyses bereikt. Probeer het morgen opnieuw."
+      },
+      "loading": {
+        "title": "Deze auto wordt geanalyseerd…",
+        "steps": [
+          "RDW-gegevens lezen…",
+          "Marktwaarde inschatten…",
+          "Nederlandse belastingregels doorlopen…",
+          "Milieuzone-status nakijken…",
+          "Vergelijkbare modellen opzoeken…",
+          "Voor- en nadelen samenvatten…"
+        ]
+      }
+    },
+    "kosten": {
+      "title": "Maandlasten",
+      "badge": "Indicatief · Op basis van RDW + landelijke gemiddelden",
+      "subtitle": "Een indicatie van wat deze auto je per maand kost. MRB is berekend; brandstof, verzekering en onderhoud zijn schattingen. Zie elk onderdeel voor uitleg.",
+      "help": "Schatting van de totale autokosten per maand. De motorrijtuigenbelasting (MRB) is exact uit de Belastingdienst-tabellen berekend op basis van gewicht, brandstof en jouw provincie. De overige kosten zijn realistische bandbreedtes; werkelijke premies en kosten kunnen afwijken.",
+      "provinceLabel": "Provincie",
+      "perMonth": "/maand",
+      "perQuarter": "/kwartaal",
+      "mrb": "Wegenbelasting (MRB)",
+      "mrbHelp": "Motorrijtuigenbelasting per kwartaal aan de Belastingdienst. Berekend op gewicht (massa rijklaar) + brandstof + provinciale opcenten. Standaard provincie Noord-Holland (laagste opcenten 67 %).",
+      "mrbMath": "Basis {base} × ({pct} % opcenten) = {total} / kwartaal",
+      "fuel": "Brandstof",
+      "fuelHelp": "Geschatte brandstofkosten op basis van het officiële RDW-verbruik (gecombineerd, WLTP) gerekend over 15 000 km/jaar tegen huidige pompprijzen. Spread van ±15 % voor verschil in rijstijl.",
+      "fuelMeta": "Bij {km} km/jaar en {price}",
+      "insurance": "Verzekering (schatting)",
+      "insuranceHelp": "Indicatie WA + casco voor een gemiddelde bestuurder. Werkelijke premie hangt af van leeftijd, schadevrije jaren, postcode en gekozen dekking. Vraag een offerte voor een precies bedrag.",
+      "maintenance": "Onderhoud",
+      "maintenanceHelp": "Service, oliebeurt, banden en kleine reparaties. Stijgt naarmate de auto ouder wordt, omdat oudere auto's gemiddeld meer kleine reparaties nodig hebben.",
+      "apk": "APK-reservering",
+      "apkHelp": "Maandelijkse reservering voor de jaarlijkse / 2-jaarlijkse APK + verwachte kleine reparaties die uit de keuring volgen.",
+      "disclaimer": "Alle bedragen zijn indicatief. Voor bindende cijfers: raadpleeg de Belastingdienst (MRB), een verzekeringsadviseur (premie) en een onafhankelijke garage (onderhoud).",
+      "province": {
+        "DR": "Drenthe",
+        "FL": "Flevoland",
+        "FR": "Fryslân",
+        "GE": "Gelderland",
+        "GR": "Groningen",
+        "LI": "Limburg",
+        "NB": "Noord-Brabant",
+        "NH": "Noord-Holland",
+        "OV": "Overijssel",
+        "UT": "Utrecht",
+        "ZE": "Zeeland",
+        "ZH": "Zuid-Holland"
+      }
+    },
+    "fab": {
+      "chat": "Chat over deze auto",
+      "aria": "Open chat over {plate}"
+    },
+    "chat": {
+      "title": "Vraag iets over {plate}",
+      "subtitle": "Auto Consul kent het RDW-dossier van deze auto. Stel vragen over prijs, belasting, milieuzones of wat dan ook.",
+      "placeholder": "Stel je vraag over {plate}…",
+      "composerLabel": "Bericht",
+      "send": "Verstuur",
+      "sending": "Bezig…",
+      "you": "Jij",
+      "consul": "Consul",
+      "aria": "Chat over {plate}",
+      "toolRunning": "Hulpmiddel {name} draait…",
+      "rateLimited": "Je hebt je dagelijkse chat-limiet bereikt. Probeer het morgen opnieuw.",
+      "genericError": "Er ging iets mis met de chat.",
+      "samples": {
+        "value": "Is dit een eerlijke vraagprijs voor deze auto?",
+        "tax": "Hoeveel wegenbelasting (MRB) betaal ik hierop?",
+        "zones": "Mag ik hier het centrum van Amsterdam mee in?"
+      },
+      "lockedBody": "Chatten over deze auto zit in elk betaald pakket. Single Pas €4,95 ontgrendelt 10 vragen op dit dossier. Vraag over prijs, belasting, milieuzones, alles.",
+      "lockedCta": "Chat ontgrendelen met Single Pas €4,95",
+      "openFull": "In volledige chat openen"
+    },
+    "labels": {
+      "merk": "Merk",
+      "model": "Model",
+      "voertuigsoort": "Voertuigsoort",
+      "inrichting": "Carrosserievorm",
+      "kleur": "Kleur",
+      "aantalDeuren": "Aantal deuren",
+      "aantalZitplaatsen": "Aantal zitplaatsen",
+      "nieuwprijs": "Nieuwprijs",
+      "brutoBpm": "Bruto BPM",
+      "datumEersteToelating": "Datum eerste toelating",
+      "datumEersteNlRegistratie": "Eerste Nederlandse registratie",
+      "datumTenaamstelling": "Tenaamstelling huidige eigenaar",
+      "importauto": "Importauto",
+      "europeseVoertuigcategorie": "Europese voertuigcategorie",
+      "typegoedkeuringsnummer": "Typegoedkeuringsnummer",
+      "variantUitvoering": "Variant / uitvoering",
+      "apkGeldigTot": "APK geldig tot",
+      "wamVerzekerd": "WAM verzekerd",
+      "openstaandeTerugroepactie": "Openstaande terugroepactie",
+      "wokStatus": "WOK status",
+      "taxi": "Taxi",
+      "exported": "Geëxporteerd",
+      "tenaamstellenMogelijk": "Tenaamstellen mogelijk",
+      "tellerstandoordeel": "Tellerstandoordeel",
+      "laatsteTellerJaar": "Laatste tellerregistratie",
+      "brandstof": "Brandstof",
+      "vermogen": "Vermogen",
+      "aantalCilinders": "Aantal cilinders",
+      "cilinderinhoud": "Cilinderinhoud",
+      "verbruikStad": "Verbruik stad",
+      "verbruikSnelweg": "Verbruik snelweg",
+      "verbruikGecombineerd": "Verbruik gecombineerd",
+      "co2Uitstoot": "CO₂ uitstoot",
+      "zuinigheidslabel": "Zuinigheidslabel",
+      "uitlaatemissieniveau": "Uitlaatemissieniveau",
+      "emissiecode": "Emissiecode",
+      "hybrideKlasse": "Hybride klasse",
+      "geluidRijdend": "Geluid rijdend",
+      "geluidStationair": "Geluid stationair",
+      "lengte": "Lengte",
+      "breedte": "Breedte",
+      "hoogte": "Hoogte",
+      "wielbasis": "Wielbasis",
+      "aantalWielen": "Aantal wielen",
+      "massaLedig": "Massa ledig voertuig",
+      "massaRijklaar": "Massa rijklaar",
+      "maxMassa": "Toegestane max. massa",
+      "maxTrekkenOngeremd": "Max. trekken ongeremd",
+      "maxTrekkenGeremd": "Max. trekken geremd",
+      "vermogenMassa": "Vermogen / massa"
+    },
+    "tile": {
+      "brandstof": "Brandstof",
+      "vermogen": "Vermogen",
+      "verbruik": "Verbruik",
+      "apkTot": "APK tot"
+    },
+    "value": {
+      "yes": "Ja",
+      "no": "Nee",
+      "recallOpen": "Ja, controleer recall-register",
+      "recallClean": "Nee",
+      "wokAwaiting": "Wachten op keuren",
+      "wokNone": "Geen WOK",
+      "expired": "verlopen",
+      "noIssues": "Geen aandachtspunten",
+      "issuesOne": "{n} aandachtspunt",
+      "issuesMany": "{n} aandachtspunten",
+      "unknownDate": "Onbekende datum"
+    },
+    "help": {
+      "openLabel": "Toon uitleg",
+      "brutoBpm": "BPM (Belasting van Personenauto's en Motorrijwielen) is de Nederlandse aankoopbelasting bij eerste registratie. Hij wordt bepaald door CO₂-uitstoot en brandstofsoort. Bij occasions niet meer relevant, alleen historisch.",
+      "nieuwprijs": "De catalogusprijs zoals bekend bij de RDW op moment van eerste toelating. Geen huidige marktwaarde.",
+      "europeseVoertuigcategorie": "EU voertuigcategorie. M1 = personenauto (≤ 8 zitplaatsen), N1 = lichte bedrijfswagen (≤ 3500 kg), L = motor/brommer. Bepaalt rijbewijs en regels.",
+      "typegoedkeuringsnummer": "Uniek nummer van de Europese typegoedkeuring. Identificeert de exacte technische uitvoering bij autoriteiten.",
+      "apkGeldigTot": "APK (Algemene Periodieke Keuring): verplichte technische keuring. Personenauto's: eerste keer na 4 jaar, daarna 2-jaarlijks, vanaf 8 jaar oud jaarlijks. Vergelijkbaar met MOT in het VK.",
+      "wamVerzekerd": "Wet Aansprakelijkheidsverzekering Motorrijtuigen. Verplichte aansprakelijkheidsverzekering. Bij 'Nee' mag de auto niet de weg op.",
+      "openstaandeTerugroepactie": "Een terugroepactie van de fabrikant die nog niet is afgehandeld. Vaak gratis te verhelpen bij een merkdealer. Vraag het serviceboekje of bel de dealer.",
+      "wokStatus": "Wacht Op Keuren: de RDW heeft het voertuig stilgezet (bijv. na schade of fraude-verdenking) en eist een herkeuring. Op de weg rijden mag niet.",
+      "tellerstandoordeel": "Het Nationaal Auto Pas-oordeel over de kilometerstand. 'Logisch' betekent de geregistreerde tellerstanden lopen netjes op. 'Onlogisch' wijst op mogelijke terugdraaiing, een ernstige rode vlag.",
+      "co2Uitstoot": "CO₂-uitstoot in gram per kilometer onder de WLTP-cyclus. Bepaalt mede de BPM en milieuzones.",
+      "zuinigheidslabel": "Energielabel A (zuinig) tot G (onzuinig), gebaseerd op CO₂ relatief tot de voertuigcategorie. A-label kan voordelen geven bij sommige werkgevers.",
+      "uitlaatemissieniveau": "Euro-emissieklasse (Euro 4, 5, 6 …). Bepaalt of de auto milieuzones binnen mag. Diesels onder Euro 4 mogen vaak het centrum niet meer in.",
+      "emissiecode": "Sub-categorie binnen de Euro-emissieklasse. Wordt gebruikt voor zero-emissie zones en uitzonderingen.",
+      "hybrideKlasse": "Mild hybride (MHEV), volledige hybride (HEV), plug-in hybride (PHEV) of geen. Bepaalt belastingvoordelen en oplaadbehoefte.",
+      "massaLedig": "Het lege voertuiggewicht zonder bestuurder, brandstof of bagage.",
+      "massaRijklaar": "Het rij-klare gewicht: leeg voertuig + 90 % vol brandstof + 75 kg-bestuurder. Gebruikt voor wegenbelasting (MRB).",
+      "maxMassa": "Toegestane maximum totaalgewicht. Voertuig + lading + inzittenden mag dit niet overschrijden.",
+      "maxTrekkenGeremd": "Maximaal gewicht van een aanhangwagen of caravan mét eigen remmen.",
+      "maxTrekkenOngeremd": "Maximaal gewicht van een aanhangwagen zonder eigen remmen, meestal beduidend lager.",
+      "vermogenMassa": "Vermogen per kilogram (kW/kg). Indicatie voor versnelling, handig om sportieve uitvoeringen te herkennen.",
+      "badgeRdw": "Officiële gegevens uit het RDW-kentekenregister. Dagelijks geactualiseerd door de RDW zelf.",
+      "badgeAi": "Interpretatie door Auto Consul AI op basis van RDW-data en algemene marktkennis. Indicatief, dus verifieer voor bindende beslissingen.",
+      "badgeMarktaanbod": "Live advertenties van derde-partij marktplaatsen, opgehaald via Google. Externe prijzen en vraagprijzen, niet door ons gecontroleerd."
+    },
+    "explainer": {
+      "toggle": "Wat zie je hier?",
+      "algemeen": "Identiteit van de auto: merk, model, kleur, datum eerste toelating, en de oorspronkelijke catalogusprijs. Dit is wat de RDW op papier weet over het voertuig.",
+      "status": "De juridische en technische status van vandaag. Mag deze auto de weg op? Is hij verzekerd, geldig gekeurd, en zijn er openstaande terugroepacties of waarschuwingen?",
+      "motorMilieu": "Motor- en milieugegevens. Brandstof, vermogen, verbruik, CO₂-uitstoot en Euro-emissieklasse. Dit bepaalt voor een groot deel waar de auto mag rijden en wat de wegenbelasting kost.",
+      "carrosserie": "Afmetingen en gewichten. Belangrijk voor wegenbelasting (massa rijklaar), maximaal trekgewicht voor caravans en aanhangwagens, en garage- of parkeervraagstukken.",
+      "apkHistorie": "Alle uitgevoerde APK-keuringen, met datum, soort keuring en eventuele aandachtspunten. Patronen van terugkerende defecten zijn vaak veelzeggend."
+    }
+  },
+  "recent": {
+    "label": "Recent:",
+    "clear": "Wissen",
+    "clearAll": "Alles wissen",
+    "remove": "Verwijder {plate}"
+  },
+  "pwa": {
+    "install": {
+      "label": "Auto Consul installeren",
+      "title": "Auto Consul installeren",
+      "subtitle": "Voeg toe aan je startscherm voor één-tik toegang. Geen app store nodig.",
+      "cta": "Installeren",
+      "dismiss": "Niet nu"
+    }
+  },
+  "errors": {
+    "invalidPlate": "Dat ziet er niet uit als een geldig Nederlands kenteken.",
+    "lookupFailed": "Opzoeken mislukt.",
+    "rateLimited": "Te veel zoekopdrachten. Probeer over {minutes} minuten opnieuw.",
+    "generic": "Er ging iets mis."
+  },
+  "language": {
+    "label": "Taal",
+    "nl": "NL",
+    "en": "EN"
+  },
+  "trademark": "Merklogo's en handelsmerken zijn eigendom van hun respectievelijke eigenaars.",
+  "cookies": {
+    "bannerText": "We gebruiken alleen strikt noodzakelijke lokale opslag voor je recente zoekopdrachten en taalkeuze. Geen tracking.",
+    "bannerLink": "Lees meer",
+    "bannerAccept": "Oké",
+    "bannerDeny": "Liever niet"
+  },
+  "footer": {
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "about": "Auto Consul combineert de officiële RDW Open Data met AI-gestuurde uitleg, zodat je voor een autoaankoop precies weet waar je aan begint. Onafhankelijk en gratis voor anonieme zoekopdrachten.",
+    "productHeading": "Product",
+    "productLinks": ["Start", "Hoe het werkt", "Over ons", "Blog"],
+    "legalHeading": "Juridisch",
+    "contactHeading": "Contact",
+    "builtIn": "Gemaakt in Nederland",
+    "trademark": "Merklogo's zijn eigendom van hun respectievelijke eigenaars."
+  }
+}

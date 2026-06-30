@@ -1,0 +1,40 @@
+{
+  "listings": [
+    {
+      "title": "Opel Karl 1.0 Edition 5-drs · 67.000 km · 1e eigenaar",
+      "url": "https://www.marktplaats.nl/example/karl-edition",
+      "source": "marktplaats.nl",
+      "snippet": "2017 · Benzine · Handgeschakeld · APK 07/2026 · €4.950",
+      "priceHint": "€ 4.950"
+    },
+    {
+      "title": "Opel Karl 1.0 ecoFlex Cosmo · airco · cruise",
+      "url": "https://www.autoscout24.nl/example/karl-cosmo",
+      "source": "autoscout24.nl",
+      "snippet": "2018 · 54.300 km · Dealeronderhoud · €6.450",
+      "priceHint": "€ 6.450"
+    },
+    {
+      "title": "Opel Karl 1.0 Selection",
+      "url": "https://www.gaspedaal.nl/example/karl-selection",
+      "source": "gaspedaal.nl",
+      "snippet": "2017 · 78.000 km · APK 02/2026 · NL auto",
+      "priceHint": "€ 5.250"
+    },
+    {
+      "title": "Opel Karl 1.0 12V Edition+ · LED-verlichting",
+      "url": "https://www.autoweek.nl/example/karl-edition-plus",
+      "source": "autoweek.nl",
+      "snippet": "2017 · 91.200 km · Eerste eigenaar · Garantie",
+      "priceHint": "€ 4.700"
+    },
+    {
+      "title": "Opel Karl 1.0 Edition Bovag occasion",
+      "url": "https://www.bovag.nl/example/karl-bovag",
+      "source": "bovag.nl",
+      "snippet": "2018 · 49.700 km · 12 mnd Bovag-garantie",
+      "priceHint": "€ 6.890"
+    }
+  ],
+  "fetchedAt": "2026-05-15T08:30:00Z"
+}

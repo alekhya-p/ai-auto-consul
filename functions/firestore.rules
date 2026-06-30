@@ -1,0 +1,174 @@
+rules_version = '2';
+
+// Auto-Consul Firestore security rules.
+//
+// Design posture: the agent service writes everything money-touching
+// (passes, events, idempotency, vehicleCache, adk_sessions,
+// stripeCustomers). Clients only read what they own. Public dossier
+// permalinks (`dossiers/`) are world-readable by id; the marketing-site
+// SSR endpoint depends on that.
+//
+// Conventions:
+//   - `signedIn()`     - any authenticated user (including anonymous).
+//   - `self(uid)`      - request.auth.uid matches the path uid.
+//   - `isAnon()`       - sign_in_provider is "anonymous".
+//   - `ownsSession()`  - the session document's uid matches the caller.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── helpers ─────────────────────────────────────────────────────
+    function signedIn() {
+      return request.auth != null;
+    }
+    function self(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+    function isAnon() {
+      return signedIn()
+        && request.auth.token.firebase.sign_in_provider == "anonymous";
+    }
+    // Block client writes of entitlement / billing fields on user create.
+    function noPrivilegedUserFields() {
+      return !request.resource.data.keys().hasAny([
+        'tier', 'credits', 'freeQuestionsRemaining', 'totalCarPassesPurchased', 'role'
+      ]);
+    }
+
+    // ── users/{uid} ─────────────────────────────────────────────────
+    // Self-read; self-update limited to safe profile fields. Money +
+    // tier fields are server-only via the Admin SDK.
+    match /users/{uid} {
+      allow read:   if self(uid);
+      allow create: if self(uid) && noPrivilegedUserFields();
+      allow update: if self(uid)
+                    && request.resource.data.diff(resource.data).affectedKeys()
+                         .hasOnly(['displayName', 'locale', 'persona']);
+      allow delete: if false;
+
+      // users/{uid}/passes/** - server-only writes (Stripe webhook
+      // function). Owner can read their passes.
+      match /passes/{passId} {
+        allow read:   if self(uid);
+        allow write:  if false;
+      }
+
+      // users/{uid}/savedDossiers/** - server-managed "recent dossiers"
+      // list. Owner reads; writes via the agent's /v1/dossiers endpoint
+      // (Admin SDK), never directly from the client.
+      match /savedDossiers/{plate} {
+        allow read:  if self(uid);
+        allow write: if false;
+      }
+
+      // users/{uid}/dailyCounters/** - free-tier daily-cap counters
+      // (rdwLookups, aiAnalyses). Owner can read to show "3 / 5 used
+      // today" in the UI; writes are server-only.
+      match /dailyCounters/{dateKey} {
+        allow read:  if self(uid);
+        allow write: if false;
+      }
+    }
+
+    // ── credit_events/{eventId} ────────────────────────────────────
+    // Append-only credit usage log. Surfaced to the owner via the
+    // agent's /v1/credits/history endpoint - never read directly from
+    // the client because the collection is fanned across all users.
+    match /credit_events/{eventId} {
+      allow read, write: if false;
+    }
+
+    // ── sessions/{sessionId} ────────────────────────────────────────
+    // User-facing curated chat history. Read by the owning uid only;
+    // writes happen server-side from the agent.
+    match /sessions/{sessionId} {
+      allow read:   if signedIn()
+                    && resource.data.uid == request.auth.uid;
+      allow write:  if false;
+
+      // sessions/{id}/turns/{turnId} - same posture.
+      match /turns/{turnId} {
+        allow read: if signedIn()
+                    && get(/databases/$(database)/documents/sessions/$(sessionId))
+                       .data.uid == request.auth.uid;
+        allow write: if false;
+      }
+    }
+
+    // ── adk_sessions/{key} ──────────────────────────────────────────
+    // ADK internal replay state. Never readable from clients; agent
+    // service uses the Admin SDK to read + write.
+    match /adk_sessions/{key} {
+      allow read, write: if false;
+      match /{document=**} {
+        allow read, write: if false;
+      }
+    }
+
+    // ── dossiers/{vehicleId} ────────────────────────────────────────
+    // Public shareable analyses. World-readable by id (the marketing
+    // SSR endpoint depends on this). Writes are server-only.
+    match /dossiers/{vehicleId} {
+      allow read:  if true;
+      allow write: if false;
+    }
+
+    // ── vehicleCache/** ─────────────────────────────────────────────
+    // RDW + (eventually) Autotelex raw payloads. Server-only.
+    match /vehicleCache/{key} {
+      allow read, write: if false;
+    }
+
+    // ── vision_jobs/{jobId} ────────────────────────────────────────
+    // Photo damage scan results. Owner read; writes server-only.
+    match /vision_jobs/{jobId} {
+      allow read:  if signedIn()
+                   && resource.data.uid == request.auth.uid;
+      allow write: if false;
+    }
+
+    // ── events/{eventId} ───────────────────────────────────────────
+    // AI Act audit log. Never client-readable. Hash-chained server-side.
+    match /events/{eventId} {
+      allow read, write: if false;
+    }
+
+    // ── stripe_events/{eventId} ────────────────────────────────────
+    // Webhook dedup table. Server-only.
+    match /stripe_events/{eventId} {
+      allow read, write: if false;
+    }
+
+    // ── stripeCustomers/{uid} ──────────────────────────────────────
+    // uid → stripe customer id mapping written by the agent on first
+    // checkout. Server-only.
+    match /stripeCustomers/{uid} {
+      allow read, write: if false;
+    }
+
+    // ── idempotency/{key} ──────────────────────────────────────────
+    // Server-side dedupe table for money-touching POSTs. Server-only.
+    match /idempotency/{key} {
+      allow read, write: if false;
+    }
+
+    // ── featureFlags/{flag} ────────────────────────────────────────
+    // Read-only to signed-in clients so the UI can mirror banners the
+    // agent enforces. Writes are server-only.
+    match /featureFlags/{flag} {
+      allow read:  if signedIn();
+      allow write: if false;
+    }
+
+    // ── migrations/{id} ────────────────────────────────────────────
+    // Schema migration tracker. Server-only via the migration SA.
+    match /migrations/{id} {
+      allow read, write: if false;
+    }
+
+    // ── default deny ───────────────────────────────────────────────
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "messages": [
+    {
+      "id": "demo-user-1",
+      "role": "user",
+      "content": "Is de APK-historie schoon en zijn er open recalls?"
+    },
+    {
+      "id": "demo-asst-1",
+      "role": "assistant",
+      "content": "Ik haal de actuele APK-status en recall-informatie op voor RN-923-N.",
+      "toolCalls": [
+        {
+          "id": "demo-tc-1",
+          "type": "function",
+          "function": {
+            "name": "rdw_fetch",
+            "arguments": "{\"plate\":\"RN923N\"}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo-tool-1",
+      "role": "tool",
+      "toolCallId": "demo-tc-1",
+      "content": "{\"found\":true,\"source\":\"rdw\",\"kenteken\":\"RN923N\",\"make\":\"OPEL\",\"model\":\"KARL / VIVA\",\"firstRegistration\":\"2017-12-29\",\"firstNlRegistration\":\"2017-12-29\",\"apkValidUntil\":\"2026-07-15\",\"apkValid\":true,\"imported\":false,\"energyLabel\":\"B\",\"exported\":false,\"taxi\":false,\"openRecall\":false,\"liabilityInsured\":true}"
+    },
+    {
+      "id": "demo-asst-2",
+      "role": "assistant",
+      "content": "De APK is geldig tot 15 jul 2026 en er zijn geen open recalls. Vraag de verkoper om facturen van het laatste onderhoud - de meest recente keuring had lichte adviseringen (uitlaat, remmen, ruitenwisser)."
+    }
+  ]
+}

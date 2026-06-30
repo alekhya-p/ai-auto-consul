@@ -1,0 +1,76 @@
+{
+  "kenteken": "J640HX",
+  "found": true,
+  "algemeen": {
+    "merk": "BMW",
+    "model": "318I",
+    "voertuigsoort": "Personenauto",
+    "inrichting": "sedan",
+    "eersteKleur": "Blauw",
+    "tweedeKleur": null,
+    "nieuwprijsEuro": 38900,
+    "brutoBpmEuro": 3438,
+    "aantalDeuren": 4,
+    "aantalZitplaatsen": 5,
+    "datumEersteToelating": "2023-03-22",
+    "datumEersteNlRegistratie": "2023-03-22",
+    "datumTenaamstelling": "2024-08-10",
+    "importauto": false,
+    "europeseVoertuigcategorie": "M1",
+    "typegoedkeuringsnummer": "e1*2018/858*0123*04",
+    "variant": "G20",
+    "uitvoering": "8R31"
+  },
+  "motorMilieu": {
+    "brandstof": "Benzine",
+    "aantalCilinders": 3,
+    "cilinderinhoudCc": 1499,
+    "vermogenKw": 115,
+    "vermogenPk": 156,
+    "verbruikStad": 7.4,
+    "verbruikSnelweg": 4.9,
+    "verbruikGecombineerd": 5.8,
+    "co2GecombineerdGperKm": 131,
+    "zuinigheidslabel": "C",
+    "uitlaatemissieniveau": "EURO 6 D",
+    "emissiecode": "6",
+    "hybrideKlasse": "Mild-hybride",
+    "geluidsniveauRijdend": 72,
+    "geluidsniveauStationair": 75
+  },
+  "carrosserie": {
+    "lengteCm": 471,
+    "breedteCm": 183,
+    "hoogteCm": 144,
+    "wielbasisCm": 285,
+    "aantalWielen": 4,
+    "massaLedigKg": 1400,
+    "massaRijklaarKg": 1500,
+    "toegestaneMaximumMassaKg": 2000,
+    "maxTrekkenOngeremdKg": 695,
+    "maxTrekkenGeremdKg": 1500,
+    "vermogenMassarijklaar": 0.08
+  },
+  "status": {
+    "apkGeldigTot": "2026-08-10",
+    "apkGeldig": true,
+    "wamVerzekerd": true,
+    "openstaandeTerugroepactie": false,
+    "wokStatus": false,
+    "wokToelichting": null,
+    "taxi": false,
+    "exported": false,
+    "tenaamstellenMogelijk": true,
+    "tellerstandoordeel": "Logisch",
+    "laatsteRegistratieTellerstandJaar": 2025
+  },
+  "apkHistorie": [
+    {
+      "datum": "2025-08-10",
+      "tijd": "10:15",
+      "soort": "APK Lichte voertuigen",
+      "resultaat": "Periodieke controle - goedgekeurd",
+      "aandachtspunten": []
+    }
+  ]
+}

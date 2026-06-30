@@ -1,0 +1,56 @@
+{
+  "messages": [
+    {
+      "id": "onb-user-1",
+      "role": "user",
+      "content": "hi"
+    },
+    {
+      "id": "onb-asst-1",
+      "role": "assistant",
+      "content": "Hello! I'm Auto-Consul, your expert in Dutch vehicle buying. How can I help you today?",
+      "toolCalls": [
+        {
+          "id": "onb-tc-1",
+          "type": "function",
+          "function": {
+            "name": "suggest_followups",
+            "arguments": "{\"questions\":[\"Wat is de waarde van mijn auto?\",\"Hoe werkt importeren?\",\"Wat zijn de voordelen van elektrisch rijden?\"]}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "onb-tool-1",
+      "role": "tool",
+      "toolCallId": "onb-tc-1",
+      "content": "{\"questions\":[\"Wat is de waarde van mijn auto?\",\"Hoe werkt importeren?\",\"Wat zijn de voordelen van elektrisch rijden?\"]}"
+    },
+    {
+      "id": "onb-user-2",
+      "role": "user",
+      "content": "tell me what you can do"
+    },
+    {
+      "id": "onb-asst-2",
+      "role": "assistant",
+      "content": "I can help you with all sorts of information about Dutch vehicles! I can look up official RDW registry data like make, model, APK (MOT), recalls, and import/export status. I can also provide an AI-powered analysis that includes market value, depreciation, tax implications (BPM, MRB, bijtelling), emission zone compatibility, pros and cons, and things to check.\n\nIf you're interested in real-time prices, common problems, or recent news about a specific car, I can search the web for that too. Just give me a license plate or ask a question!",
+      "toolCalls": [
+        {
+          "id": "onb-tc-2",
+          "type": "function",
+          "function": {
+            "name": "suggest_followups",
+            "arguments": "{\"questions\":[\"Can you explain RDW data?\",\"What kind of AI analysis do you provide?\",\"How do I ask you about a specific car?\"]}"
+          }
+        }
+      ]
+    },
+    {
+      "id": "onb-tool-2",
+      "role": "tool",
+      "toolCallId": "onb-tc-2",
+      "content": "{\"questions\":[\"Can you explain RDW data?\",\"What kind of AI analysis do you provide?\",\"How do I ask you about a specific car?\"]}"
+    }
+  ]
+}

@@ -1,0 +1,1217 @@
+{
+  "admin": {
+    "usage": {
+      "title": "Usage analytics",
+      "rangeLabel": "Period",
+      "daysN": "{n} days",
+      "loading": "Loading analytics…",
+      "error": "Couldn't load the analytics.",
+      "empty": "No data in this period yet.",
+      "truncated": "Result truncated. Narrow the period for complete figures.",
+      "cards": {
+        "turns": "Chat turns",
+        "credits": "Credits used",
+        "avgPerTurn": "Avg credits/turn",
+        "avgTools": "Avg tools/turn",
+        "users": "Unique users"
+      },
+      "perTool": {
+        "title": "By tool",
+        "tool": "Tool",
+        "calls": "Calls",
+        "cost": "Credits",
+        "avg": "Average"
+      },
+      "cache": { "title": "Cache-hit rate by source" },
+      "ai": {
+        "title": "AI telemetry by model",
+        "model": "Model",
+        "calls": "Calls",
+        "inTok": "Avg input tokens",
+        "outTok": "Avg output tokens",
+        "latency": "Avg latency (ms)"
+      },
+      "daily": { "title": "Credits per day" }
+    }
+  },
+  "brand": "Auto Consul",
+  "topbar": {
+    "back": "← New plate",
+    "backDashboard": "← Back to dashboard",
+    "center": "Dossier, Issue 2026"
+  },
+  "hero": {
+    "eyebrow": "Used-car intelligence · Netherlands",
+    "titleA": "Don't get",
+    "titleEm": "burned",
+    "titleB": "buying a used car.",
+    "subtitle": "Mileage tampering. Open recalls. A short MOT for a reason. Paste the plate and we cross-check the official RDW registry, flag the risks, and tell you what it'll really cost you each month. The first check is free.",
+    "placeholder": "Plate",
+    "submit": "Check this car",
+    "submitting": "Looking up…",
+    "invalid": "Enter a Dutch plate (4 to 8 characters) to check this car.",
+    "statsLabel": "Product highlights",
+    "stats": {
+      "datasets": "RDW datasets stitched",
+      "cache": "24-hour dossier cache",
+      "free": "Anonymous & free"
+    },
+    "featuresLabel": "What we cross-check",
+    "features": {
+      "rdw": {
+        "title": "The RDW registry, fully decoded",
+        "body": "MOT history, NAP odometer assessment, open recalls, WOK status, fuel + emissions. One screen, plain language."
+      },
+      "ai": {
+        "title": "The numbers a seller won't volunteer",
+        "body": "Indicative market range. Monthly cost (MRB + insurance + fuel). Emission-zone access through 2030."
+      },
+      "privacy": {
+        "title": "You don't pay until you want to",
+        "body": "Every plate lookup is free, anonymous, and uncomplicated. A €4.95 Single Pass only unlocks the AI deep-dive."
+      }
+    }
+  },
+  "reveals": {
+    "label": "What we surface",
+    "title": "Six red flags a used-car ad won't tell you about.",
+    "subtitle": "Listings optimise for clicks. RDW publishes the things that matter. We put both side by side so the things to worry about are the first things you see.",
+    "items": {
+      "mileage": {
+        "title": "Mileage tampering",
+        "body": "Every reading is rated by NAP. 'Illogical' = walk away. We say it loudly, not in fine print."
+      },
+      "recalls": {
+        "title": "Open recalls",
+        "body": "Manufacturer safety updates the previous owner never bothered with. Free to fix, but did they?"
+      },
+      "wok": {
+        "title": "WOK status",
+        "body": "RDW has officially distrusted this car. We surface this above everything else. Never buy one."
+      },
+      "apk": {
+        "title": "Short MOT, on purpose",
+        "body": "1-month-MOT listings exist because the seller knows the next inspection will be expensive. We show the pattern."
+      },
+      "cost": {
+        "title": "Real monthly cost",
+        "body": "MRB (province-dependent), insurance band, fuel and bijtelling: the bill behind the asking price."
+      },
+      "zone": {
+        "title": "Emission zones, today and 2030",
+        "body": "A 2014 diesel might fit your route today and not tomorrow. We project zone access through 2030."
+      }
+    }
+  },
+  "freeVsPaid": {
+    "eyebrow": "Free vs Pass",
+    "title": "Free until you decide to buy.",
+    "subtitle": "Every plate lookup is free. A €4.95 Single Pass only unlocks the AI deep-dive, and only when you've narrowed it down to one car.",
+    "free": {
+      "title": "Free, anonymous",
+      "price": "€0",
+      "items": [
+        "Full RDW registry: MOT, fuel, emissions, recalls, NAP",
+        "Indicative market range (Autotelex)",
+        "Plain-language facts, no Dutch jargon",
+        "5 lookups per day, no account required"
+      ],
+      "cta": "Try a plate"
+    },
+    "paid": {
+      "title": "Single Pass",
+      "price": "€4,95",
+      "badge": "Most-clicked",
+      "items": [
+        "Full AI analysis: 7 sections, market context, watch-outs",
+        "Monthly cost estimate (MRB + insurance + fuel + bijtelling)",
+        "Emission-zone forecast through 2030",
+        "10 chat turns about THIS specific car",
+        "Valid 30 days · No subscription · No card stored"
+      ],
+      "cta": "See all packs"
+    }
+  },
+  "trust": {
+    "eyebrow": "Why you can trust this",
+    "items": {
+      "rdw": {
+        "title": "Official RDW data",
+        "body": "Same registry the Dutch police read from. We don't editorialise the facts, we just translate them."
+      },
+      "ai": {
+        "title": "Powered by Anthropic Claude",
+        "body": "Our AI explains the RDW dossier; it never invents facts. If RDW didn't say it, neither do we."
+      },
+      "privacy": {
+        "title": "No card stored. Ever.",
+        "body": "Single Pass means single pass. No subscription, no auto-renew, no card on file. Stripe handles the payment."
+      }
+    }
+  },
+  "marketing": {
+    "showcase": {
+      "eyebrow": "See the product",
+      "title": "Real screens, not stock photos",
+      "subtitle": "Miniature replicas of what you get after a plate lookup: the full RDW dossier, AI chat with inline vehicle cards, and an account hub that shows every credit spent.",
+      "demo": "Example data",
+      "dossier": {
+        "label": "Vehicle dossier",
+        "title": "One dossier, every official fact",
+        "body": "Hero tiles, AI summary, and RDW sections (general, status, MOT history) on a single scroll. The same layout you see on a real lookup."
+      },
+      "chat": {
+        "label": "AI chat",
+        "title": "Ask in plain language",
+        "body": "Chat pulls RDW data into the thread as cards, answers follow-ups, and shows your remaining credits in the header. No guessing what's left."
+      },
+      "account": {
+        "label": "Account & usage",
+        "title": "Transparent usage, no surprises",
+        "body": "Balance at a glance, active passes with progress bars, and a line-by-line usage feed (chat messages, lookups, AI analysis) so you always know what a credit bought."
+      },
+      "compare": {
+        "label": "Compare cars",
+        "title": "Two cars, side by side",
+        "body": "Put two plates head-to-head: price range, power, consumption, MOT and odometer verdict in one table, with the better value flagged."
+      },
+      "pdf": {
+        "label": "Dossier.pdf",
+        "title": "Export a polished PDF",
+        "body": "Download the full dossier as a branded report with official RDW sections plus your AI analysis, ready to share with a partner or mechanic."
+      }
+    },
+    "preview": {
+      "dossier": {
+        "model": "BMW 320i",
+        "year": "2019",
+        "fuel": "Petrol",
+        "power": "184 hp",
+        "consumption": "5.8 l/100km",
+        "apk": "Dec 2026",
+        "aiTitle": "Quick AI take · example",
+        "aiSnippet": "Strong service history; check rear brake wear at next MOT. Market range €22 to 26k for this mileage.",
+        "rowType": "Vehicle type",
+        "valType": "Saloon",
+        "rowColor": "Colour",
+        "valColor": "Grey metallic",
+        "rowNap": "NAP odometer",
+        "valNap": "Logical",
+        "rowRecall": "Open recall",
+        "valRecall": "None",
+        "rowWok": "WOK status",
+        "valWok": "No distrust"
+      },
+      "chat": {
+        "plateTitle": "J-640-HT",
+        "userMsg": "Is the APK history clean and any open recalls?",
+        "agentLead": "Here's what RDW shows for this plate:",
+        "badgeApk": "MOT valid",
+        "badgeRecall": "No recall",
+        "badgeNap": "NAP logical",
+        "agentTail": "Last inspection had minor advisories only. Worth asking the seller for invoices."
+      },
+      "account": {
+        "packName": "Single Pass",
+        "when1": "Today, 14:22",
+        "when2": "Yesterday",
+        "when3": "3 days ago"
+      },
+      "compare": {
+        "title": "Compare two cars",
+        "sub": "BMW 320i vs Audi A4",
+        "carB": "Audi A4"
+      }
+    }
+  },
+  "how": {
+    "title": "How a 4-second check saves you €4,000.",
+    "lede": "We don't show you opinions. We show you the same facts the RDW shows the police, plus an AI translation of what those facts mean for your wallet, your zone access, and your weekends. Three steps.",
+    "step1": {
+      "title": "Paste any Dutch plate",
+      "body": "Letters and numbers, with or without dashes. We accept whatever you copied from Marktplaats. No account needed."
+    },
+    "step2": {
+      "title": "We pull the official record",
+      "body": "RDW registry, NAP odometer history, the full APK file, open recalls, fuel class. All from public sources, in about a second."
+    },
+    "step3": {
+      "title": "Plain-language verdict",
+      "body": "Indicative price range, points of attention, monthly cost, emission-zone access in 2030. Read in 60 seconds, decide in 2 minutes."
+    },
+    "redFlags": {
+      "title": "Eight things we surface that listings won't.",
+      "subtitle": "Each one of these has cost a buyer at least €1,000 we know about. They're the first thing we display on a dossier, not the last.",
+      "items": [
+        "WOK status | RDW has refused to register this car. Walk away.",
+        "Mileage 'illogical' | NAP flags the odometer as tampered. Hard pass.",
+        "Open safety recall | Manufacturer issued a fix; this car never had it.",
+        "Short MOT, on purpose | A 1-month MOT after a long owner is the seller dodging a known bill.",
+        "Imported with no history | EU import on its second NL plate, no service stamps from origin.",
+        "Wrong emission class | Looks like Euro 6 in the ad, registered as Euro 5 at RDW. Zone trouble.",
+        "Hidden monthly cost | Heavy SUV in a high-opcenten province = €120+/month MRB alone.",
+        "Optimistic fuel claims | The RDW-registered consumption rarely matches the dealer 'fuel-efficient!' line."
+      ]
+    },
+    "comparison": {
+      "title": "Free works for browsing. A Pass works when you're serious.",
+      "subtitle": "Free is the same RDW data the police read. A Pass adds AI context, real monthly cost, and the ability to chat about this specific car.",
+      "freeColumn": {
+        "label": "Free, anonymous",
+        "items": [
+          "Full RDW dossier (5 datasets)",
+          "Indicative market range",
+          "Open recalls + APK history",
+          "5 lookups/day, no account"
+        ]
+      },
+      "paidColumn": {
+        "label": "Single Pass · €4,95",
+        "items": [
+          "Everything from free, plus:",
+          "AI analysis: 7 sections in plain English",
+          "Monthly cost (MRB + insurance + fuel)",
+          "Emission-zone forecast to 2030",
+          "10 chat turns about THIS car"
+        ]
+      }
+    },
+    "personas": {
+      "title": "Who Auto Consul is built for.",
+      "items": [
+        "First-time buyers | You're not a car person and you shouldn't have to become one. We translate the RDW into 'is this a good buy or not?'",
+        "Shortlisters | Comparing three cars from Marktplaats? Compare 3 puts them side-by-side, with full AI on each.",
+        "Flippers + dealers | Power 10 covers ten cars a month with chat and unlimited lookups. Faster than your spreadsheet."
+      ]
+    },
+    "benefits": {
+      "title": "What a Pass actually buys you.",
+      "items": [
+        "Full AI analysis | All 7 sections: market value, tax, emission zones, pros, cons, watch-outs, comparable models.",
+        "Chat about the car | Ask 'is this fair?' or 'will it still enter Amsterdam in 2030?' You get 10 questions per Single Pass.",
+        "Saved dossiers | Your recent lookups follow you across devices and survive cache clears.",
+        "Real market context | Autotelex valuation laid on top of RDW for a credible price range.",
+        "No subscription, ever | One-off purchases, valid 30 to 60 days. No card on file. Never billed again.",
+        "BTW invoice | Every purchase ships a downloadable Dutch VAT invoice for your records."
+      ]
+    },
+    "cta": {
+      "title": "Try it on the car you're staring at right now.",
+      "body": "Type the plate. Get the RDW dossier in one second. We'll show you what a Pass adds; you decide whether you need it.",
+      "lookup": "Check a plate",
+      "pricing": "See pricing"
+    }
+  },
+  "nav": {
+    "primary": "Main menu",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Home",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "about": "About",
+    "blog": "Blog",
+    "signIn": "Sign in",
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "account": "Account",
+    "signOut": "Sign out",
+    "signedInAs": "Signed in as",
+    "userMenu": "Open account menu",
+    "compare": "Compare",
+    "mobile": {
+      "label": "Bottom navigation",
+      "home": "Home",
+      "compare": "Compare",
+      "chat": "Chat",
+      "account": "Account"
+    }
+  },
+  "about": {
+    "title": "An honest co-pilot for Dutch used-car buyers.",
+    "lede": "Buying a used car in the Netherlands shouldn't require a glossary. WOK, BPM, milieuzone, Euro 6d-TEMP: none of that should stand between you and a fair decision. We do the translation.",
+    "mission": {
+      "title": "Why this exists",
+      "body": "Marktplaats and the big dealer portals optimise for click-throughs, not for buyers. The RDW already publishes the truth (it's public, it's free, it's structured) but it's spread across twelve pages and written for inspectors. We stitch it together, lay an AI translation on top, and put the things to worry about above the things to admire."
+    },
+    "principles": {
+      "title": "What we stand for",
+      "items": [
+        "Sourced facts only | Every line of data points back to RDW or a named third party. Our AI explains, never invents.",
+        "No recurring billing | Single Pass, Compare 3, Power 10: every pack is a one-time purchase. We never store your card.",
+        "Privacy by default | No tracking cookies, no resale of your searches. The first 5 lookups per day need no account at all.",
+        "Built for NL | Dutch BTW invoices, Dutch tax rules, Dutch milieuzone rules. We reply in Dutch when you email."
+      ]
+    },
+    "data": {
+      "title": "Where the data comes from",
+      "body": "RDW Open Data covers registration, APK (MOT), fuel, CO₂, recalls and NAP odometer assessment. Autotelex Vehicle Data API supplies the indicative market range. AI summaries come from Anthropic Claude with RDW as the ground truth. We don't generate facts, we just translate them into plain language."
+    },
+    "contact": {
+      "title": "Questions, feedback, refunds?",
+      "body": "Drop us a line. We read every message and reply within one business day."
+    }
+  },
+  "blog": {
+    "title": "Read this before you transfer the deposit.",
+    "subtitle": "Plain-English explainers on Dutch road tax, RDW data, APK history, milieuzones and the small print no listing volunteers. Written for buyers, not for SEO crawlers.",
+    "readTime": "{n} min read",
+    "comingSoon": "Coming soon",
+    "backToIndex": "All articles",
+    "notFound": {
+      "title": "Article not found",
+      "body": "It may have moved or never existed. The index below has everything we've published."
+    },
+    "cta": {
+      "title": "Try it on the car you're actually looking at.",
+      "body": "Auto Consul gives you the RDW dossier and an indicative market range for free. A €4,95 Single Pass unlocks the AI analysis and chat for one specific car.",
+      "lookup": "Check a plate",
+      "pricing": "See pricing"
+    }
+  },
+  "onboarding": {
+    "welcome": {
+      "eyebrow": "Welcome",
+      "title": "Your welcome pass is active",
+      "body": "You can run a full AI analysis and chat about a car right away, no card required.",
+      "perk1": "1 data credit for a deep dossier analysis",
+      "perk2": "3 chat turns on your first car",
+      "perk3": "Unlimited free RDW lookups every day",
+      "ctaChat": "Open chat",
+      "dismiss": "Explore dashboard"
+    }
+  },
+  "compare": {
+    "eyebrow": "Compare",
+    "title": "Side-by-side comparison",
+    "subtitle": "{n} cars compared.",
+    "emptyHelp": "Add ?plates=ABC123,XYZ789 to the URL, or pick cars from the dashboard.",
+    "empty": {
+      "headline": "Nothing to compare yet.",
+      "body": "Compare puts two or three cars side-by-side with the same RDW data, the same AI analysis, and the same monthly-cost calc. Pick the cars you're considering, from your saved dossiers or a fresh plate lookup, and the comparison appears here.",
+      "cta": "Pick cars from your dashboard",
+      "lookup": "Look up a new plate"
+    },
+    "tierLimit": "Your {tier} plan covers AI analysis on {aiCount} of {total} cars. The others show RDW data only.",
+    "upgradeLink": "Upgrade to compare more.",
+    "locked": {
+      "title": "Compare needs a Pass",
+      "body": "Side-by-side comparison is part of every paid pack. Single Pass covers one full car, Compare 3 unlocks three, Power 10 unlocks ten.",
+      "cta": "See pricing"
+    },
+    "guestPreview": {
+      "banner": "Official RDW data side by side. Sign up to unlock AI verdicts and monthly costs.",
+      "cta": "Sign up free"
+    },
+    "freePreview": {
+      "banner": "RDW comparison is free. A pass unlocks AI summaries on every column.",
+      "cta": "See pricing"
+    },
+    "paywall": {
+      "trigger": "Unlock AI compare",
+      "title": "AI compare needs a pass",
+      "body": "Every paid pack includes side-by-side AI analysis: market value, pros/cons, and negotiation tips for each car.",
+      "cta": "See pricing",
+      "dismiss": "Keep RDW only"
+    },
+    "col": {
+      "metric": "Detail"
+    },
+    "group": {
+      "identity": "Identity",
+      "legal":    "Legal & status",
+      "engine":   "Engine & emissions",
+      "body":     "Body & dimensions",
+      "cost":     "Monthly cost (indicative)",
+      "ai":       "AI analysis"
+    },
+    "row": {
+      "brand": "Brand",
+      "model": "Model",
+      "variant": "Variant",
+      "year": "First registered",
+      "firstNl": "First NL registration",
+      "colour": "Primary colour",
+      "imported": "Imported",
+      "apk": "APK valid until",
+      "insured": "Liability insured",
+      "recall": "Open recall",
+      "taxi": "Taxi history",
+      "exported": "Exported",
+      "fuel": "Fuel",
+      "power": "Power",
+      "displacement": "Displacement",
+      "co2": "CO₂ (combined)",
+      "consumption": "Consumption (combined)",
+      "emissionClass": "Emission class",
+      "energyLabel": "Energy label",
+      "bodyType": "Body style",
+      "seats": "Seats",
+      "doors": "Doors",
+      "kerbWeight": "Kerb weight",
+      "maxTowBraked": "Max towing (braked)",
+      "costTotal": "Total / month",
+      "costMrb": "Road tax (MRB)",
+      "costFuel": "Fuel",
+      "costInsurance": "Insurance",
+      "costMaintenance": "Maintenance",
+      "costApk": "APK reserve",
+      "value": "Estimated value",
+      "summary": "AI summary"
+    },
+    "value": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "collapse": {
+      "show": "{n} fields match, show",
+      "hide": "{n} fields match, hide",
+      "hint": "Same across all selected cars"
+    },
+    "ai": {
+      "loading": "Analysing…",
+      "skipped": "Upgrade to unlock",
+      "error": "AI unavailable"
+    }
+  },
+  "chat": {
+    "focus": {
+      "title": "Chat",
+      "plateTitle": "Chat · {plate}",
+      "backAria": "Back to dashboard",
+      "closeAria": "Close chat"
+    },
+    "eyebrow": "Chat",
+    "title": "Talk to Auto Consul",
+    "newChat": "New chat",
+    "history": {
+      "toggle": "History ({n})",
+      "label": "Recent chats",
+      "empty": "No previous chats yet. Your conversations will appear here.",
+      "untitled": "Untitled chat",
+      "delete": "Delete chat: {title}"
+    },
+    "sidebar": {
+      "close": "Close"
+    },
+    "you": "You",
+    "consul": "Consul",
+    "threadLabel": "Chat thread",
+    "hint": "Tip: paste a plate (e.g. 12-AB-345) or describe the car you're considering.",
+    "empty": {
+      "title": "What can I help you check?",
+      "body": "Ask about any Dutch plate, compare cars, or describe a listing you found. I'll pull RDW data, market value and tax implications.",
+      "bodyPlate": "You're looking at {plate}. Ask about APK, recalls, running costs, or whether the asking price makes sense.",
+      "suggestionsLabel": "Try one of these:"
+    },
+    "suggestionsForPlate": {
+      "0": "Summarise the RDW dossier for {plate}",
+      "1": "Any open recalls or WOK flags on {plate}?",
+      "2": "What should I inspect before buying {plate}?",
+      "3": "Is the asking price fair for {plate}?"
+    },
+    "suggestions": [
+      "What can you tell me about plate 12-AB-345?",
+      "I'm comparing a 2019 BMW 320i and an Audi A4. What should I check?",
+      "Is this PHEV worth it for 25k km/year?",
+      "How does the APK history look for plate 06-PB-LF?"
+    ],
+    "cache": {
+      "updated": "Updated {when} (cached)"
+    },
+    "composer": {
+      "label": "Your message",
+      "placeholder": "Ask anything: paste a plate, compare cars, follow up…",
+      "placeholderPlate": "Ask about {plate}…",
+      "send": "Send",
+      "stop": "Stop",
+      "sending": "Sending…"
+    },
+    "meter": {
+      "credits": "Credits",
+      "chat": "Chat",
+      "accountHint": "View passes and usage in Account",
+      "summaryAria": "{credits} credits and {chatTurns} chat turns remaining"
+    },
+    "platePin": {
+      "label": "Talking about",
+      "clear": "Clear plate context"
+    },
+    "activity": {
+      "label": "Tool activity",
+      "title": "Activity",
+      "toggle": "{n} tool calls",
+      "empty": "Tool calls (and what they cost in credits) appear here as I work.",
+      "running": "running…",
+      "done": "done"
+    },
+    "upgrade": {
+      "chatTitle": "Daily chat limit reached",
+      "chatBody": "You've used today's free chat turns. Upgrade your pack to keep going. Single Pass €4.95 covers 10 turns on a full dossier.",
+      "turnsTitle": "You're out of messages",
+      "turnsBody": "You've used your chat messages for now. Get credits to keep going with Auto-Consul. Your saved conversations stay put.",
+      "creditsTitle": "Out of credits",
+      "creditsBody": "This turn needs a credit but your pack is empty. Top up or buy a bigger pack to continue.",
+      "cta": "See pricing",
+      "turnsCta": "View plans",
+      "accountLink": "Manage account"
+    },
+    "errors": {
+      "rateLimited": "Daily chat limit reached. Try again tomorrow or upgrade your pack.",
+      "generic": "Something went wrong. Try again?"
+    }
+  },
+  "dailyLimit": {
+    "rdw": {
+      "title": "You've used today's {limit} free RDW lookups",
+      "body": "Free tier gives you {limit} dossier lookups per day. A Single Pass €4.95 lifts the cap and unlocks the full AI analysis on one car."
+    },
+    "ai": {
+      "title": "You've hit today's {limit} AI analyses",
+      "body": "Free tier covers {limit} AI analyses per day. A paid pack lifts the cap and gives you the full 7-section report on every car."
+    },
+    "perks": {
+      "unlimited": "Unlimited RDW lookups",
+      "chat": "Chat about each car (10 questions per pass)",
+      "fullAi": "Full AI analysis with all 7 sections"
+    },
+    "dismiss": "Maybe later",
+    "cta": "See pricing"
+  },
+  "account": {
+    "eyebrow": "Account",
+    "title": "Your account",
+    "lead": "Credits, chat history, and billing in one place.",
+    "balance": {
+      "title": "What's left on your plan",
+      "empty": "No active pack. You still get free daily lookups.",
+      "creditsHint": "Used for RDW deep data and full AI analysis",
+      "chatHint": "Messages you can send in Chat"
+    },
+    "quick": {
+      "label": "Shortcuts",
+      "chat": "Open chat",
+      "pricing": "Buy a pack",
+      "dashboard": "Dashboard"
+    },
+    "sections": {
+      "passesLead": "One-time packs. The oldest pack is used first when you spend credits.",
+      "usageLead": "Recent tool calls and chat messages that used credits.",
+      "settings": "Profile & billing"
+    },
+    "signOut": "Sign out",
+    "tier": {
+      "free":  "Free tier, limited daily lookups",
+      "pass":  "Active pass, credits below",
+      "pro":   "Pro tier, power pack active",
+      "power": "Power tier, full access"
+    },
+    "stats": {
+      "label": "Account stats",
+      "credits": "Credits remaining",
+      "chatTurns": "Chat turns left",
+      "activePasses": "Active passes"
+    },
+    "passes": {
+      "title": "Your passes",
+      "loading": "Loading passes…",
+      "loadError": "Couldn't load your passes. Please refresh.",
+      "empty": "No active passes yet.",
+      "browse": "Browse pricing",
+      "buyMore": "Buy another pack",
+      "credits": "Data credits",
+      "chatTurns": "Chat turns",
+      "expires": "Expires {date}",
+      "daysLeft": "{n} days left",
+      "noExpiry": "No expiry",
+      "consumesFirst": "Used first"
+    },
+    "chats": {
+      "title": "Chat history",
+      "new": "New chat",
+      "loading": "Loading chats…",
+      "empty": "No saved chats yet. Start a conversation in Chat.",
+      "clearAll": "Clear all chats",
+      "clearHint": "Removes chat threads only. Your account, passes, and billing stay intact.",
+      "clearConfirm": "Delete all saved chat threads on this device and server?",
+      "delete": "Delete chat"
+    },
+    "usage": {
+      "title": "Usage history",
+      "free": "Free",
+      "loading": "Loading usage…",
+      "empty": "No tool calls yet. Credits will show up here as you analyse cars.",
+      "showMore": "Show more",
+      "showLess": "Show less",
+      "col": {
+        "when": "When",
+        "tool": "Tool",
+        "plate": "Plate",
+        "cost": "Cost",
+        "balance": "Balance after"
+      },
+      "tool": {
+        "aiAnalysisLite": "AI analysis (lite)",
+        "aiAnalysisDeep": "AI analysis (full)",
+        "rdwFetch": "RDW lookup",
+        "webSearch": "Web search",
+        "suggestCompare": "Compare suggestion",
+        "suggestFollowups": "Follow-up suggestions",
+        "chatTurn": "Chat message"
+      }
+    },
+    "billing": {
+      "title": "Billing & invoices",
+      "body": "Manage payment methods, download BTW invoices, or view your payment history via the Stripe portal.",
+      "cta": "Manage billing",
+      "opening": "Opening portal…",
+      "noHistory": "No billing history yet. Make a purchase first."
+    },
+    "portal": {
+      "error": "Couldn't open the portal. Please try again."
+    },
+    "verify": {
+      "verified": "Email verified",
+      "unverified": "Email not verified",
+      "ariaVerified": "Email address verified",
+      "ariaUnverified": "Email address not verified yet",
+      "resend": "Resend verification",
+      "sending": "Sending…",
+      "refresh": "I just verified, refresh",
+      "refreshing": "Refreshing…",
+      "sent": "Sent. Check your inbox.",
+      "stillUnverified": "Still not verified. Open the link in the email.",
+      "error": "Something went wrong. Try again."
+    },
+    "delete": {
+      "title": "Delete account",
+      "body": "Removes your account, your saved dossiers, your chat history and any active passes. This cannot be undone.",
+      "cta": "Delete my account",
+      "modalTitle": "Delete your account?",
+      "modalWarning": "This is permanent. Once confirmed, the following is removed:",
+      "bullet1": "Your sign-in (you'll be signed out immediately)",
+      "bullet2": "Your saved dossiers + chat history",
+      "bullet3": "Any active passes. Unused credits are NOT refunded automatically; email support first if you want a refund.",
+      "confirmLabel": "Type {email} to confirm",
+      "cancel": "Cancel",
+      "confirm": "Delete forever",
+      "deleting": "Deleting…",
+      "mismatch": "Email doesn't match. Try again.",
+      "error": "Couldn't delete the account. Please try again or contact support."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pay once. Per car.",
+    "title": "No subscription. No card stored. Ever.",
+    "subtitle": "Buy a pack only when you need an AI deep-dive on a specific car. 5 free RDW lookups a day are always included, even without an account. Every pack is a one-time purchase.",
+    "tiers": "Pricing tiers",
+    "popular": "Most-clicked",
+    "saving": "Save {amount} vs. single",
+    "buy": "Buy now",
+    "buying": "Redirecting…",
+    "features": {
+      "credits": "{n} data credits",
+      "chatTurns": "{n} chat turns",
+      "validity": "Valid for {n} days"
+    },
+    "pack": {
+      "SINGLE":   { "name": "Single Pass", "audience": "For the one car you've narrowed down to." },
+      "COMPARE3": { "name": "Compare 3",  "audience": "Three Marktplaats tabs open at once? This is you." },
+      "POWER10":  { "name": "Power 10",   "audience": "Dealers and flippers: 10 cars a month, with chat." }
+    },
+    "creditsTable": {
+      "title": "What's a credit, in plain English?",
+      "intro": "RDW lookups are always free. A credit only burns when we pull a paid third-party source. Chat is metered separately so you never run out mid-conversation.",
+      "tool": "Tool",
+      "cost": "Credits",
+      "rdw": "RDW lookup (official, free source)",
+      "autotelex": "Autotelex dossier (cache miss)",
+      "vin": "VIN history report",
+      "pdf": "Finance PDF audit",
+      "vision": "Photo damage scan",
+      "tco": "TCO calculator",
+      "aiAnalysis": "Full AI analysis (deep dossier)",
+      "chat": "Chat turn",
+      "chatNote": "Drawn from your pack's chat-turn budget",
+      "comingSoon": "coming soon"
+    },
+    "freeTier": {
+      "title": "Free tier, properly useful",
+      "body": "Five RDW lookups and five chat turns per day, no account required. Sign up (free) and that doubles, plus three saved dossiers."
+    },
+    "trust": {
+      "label": "Why you can trust this",
+      "stripe": "Payments handled by Stripe. Your card never touches our servers.",
+      "refund": "14-day refund under Dutch consumer law (unused credits)",
+      "nl": "Built for the Dutch market. Every invoice includes BTW."
+    },
+    "faq": {
+      "title": "Real questions, real answers",
+      "q": {
+        "refund": "Can I get a refund?",
+        "expiry": "What happens when my pack expires?",
+        "tax":    "Are prices including VAT?",
+        "cancel": "How do I cancel?",
+        "data":   "Where does the data come from?"
+      },
+      "a": {
+        "refund": "Yes. Dutch consumer law gives you 14 days. Unused credits are refunded in full; we only charge for what you've used. Email support@autoconsul.nl with your order number.",
+        "expiry": "Unused credits expire on the date shown on your dashboard. We send a reminder 3 days before. Buy a new pack any time and credits stack rather than replace.",
+        "tax":    "Yes. Every price is shown including 21% Dutch BTW. Your Stripe invoice has the BTW breakdown for your records or expense claim.",
+        "cancel": "Nothing to cancel. Packs are one-off purchases. We never store your card and never charge again unless you actively buy another pack.",
+        "data":   "RDW Open Data for the free tier (registration, MOT, fuel, emissions, recalls). Autotelex for the paid market-value + dossier enrichment. AI summaries from Anthropic Claude with RDW as the ground truth."
+      }
+    },
+    "reason": {
+      "chat":    "👋 Chat needs a pass. Single Pass €4.95 unlocks 10 chat turns on a full dossier.",
+      "compare": "👋 Side-by-side comparison needs a pass. Compare 3 covers three cars; Power 10 covers ten.",
+      "ai":      "👋 Full AI analysis needs a pass. Single Pass €4.95 unlocks all 7 sections on one car.",
+      "lookup":  "👋 You've used today's 5 free RDW lookups. Any pass unlocks unlimited lookups.",
+      "credits": "👋 You're out of credits. Top up with a fresh pack to keep going."
+    },
+    "errors": {
+      "unknown": "Couldn't start the checkout. Please try again.",
+      "verifyEmailFirst": "Verify your email first. Check your inbox or use the Resend button on your dashboard."
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "subtitle": "Welcome back to Auto Consul.",
+      "google": "Continue with Google",
+      "or": "or",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "submitting": "Signing in…",
+      "forgot": "Forgot password?",
+      "resetSent": "If an account exists for {email}, we've sent a password-reset link. Check your inbox.",
+      "resetNeedEmail": "Enter your email above first, then tap “Forgot password?”.",
+      "altPrompt": "New to Auto Consul?",
+      "altLink": "Create an account"
+    },
+    "signUp": {
+      "title": "Create an account",
+      "subtitle": "Save dossiers, unlock the AI analysis and chat about any car.",
+      "google": "Continue with Google",
+      "or": "or",
+      "email": "Email",
+      "password": "Password",
+      "passwordHint": "At least 6 characters.",
+      "submit": "Create account",
+      "submitting": "Creating account…",
+      "altPrompt": "Already have an account?",
+      "altLink": "Sign in"
+    },
+    "perks": {
+      "ai": "AI analysis on every dossier",
+      "save": "Save dossiers to your dashboard",
+      "chat": "Chat about the car with Auto Consul"
+    },
+    "errors": {
+      "popup_blocked": "Pop-up blocked. Allow pop-ups for this site.",
+      "popup_closed": "Sign-in window was closed.",
+      "invalid_credentials": "Email or password is incorrect.",
+      "email_in_use": "An account already exists for this email.",
+      "weak_password": "Password is too weak (min 6 characters).",
+      "invalid_email": "That email address looks invalid.",
+      "user_disabled": "This account has been disabled.",
+      "too_many_requests": "Too many attempts. Try again in a minute.",
+      "network": "Network error. Check your connection.",
+      "not_configured": "Sign-in isn't configured here.",
+      "unknown": "Sign-in failed."
+    }
+  },
+  "dashboard": {
+    "greeting": "Welcome back, {name}",
+    "subtitle": "Look up a vehicle or jump back into one you've already analysed.",
+    "lookup": {
+      "title": "New analysis",
+      "label": "Dutch licence plate",
+      "placeholder": "e.g. 12-AB-34",
+      "submit": "Look up"
+    },
+    "recent": {
+      "title": "Your recent dossiers",
+      "loading": "Loading dossiers…",
+      "empty": "No dossiers yet. Enter a plate above to start.",
+      "unknownModel": "Unknown model",
+      "remove": "Remove {plate} from recent",
+      "clearAll": "Clear all",
+      "clearConfirm": "Clear all recent dossiers? This removes them from this device and (if signed in) from your saved list."
+    },
+    "banner": {
+      "paidOk": "Payment received. Your credits will be available in a moment.",
+      "paidCancel": "Payment cancelled, no charge made.",
+      "verifyEmail": "We sent a verification link to {email}. Verify to unlock purchases.",
+      "verifyResend": "Resend",
+      "verifyResent": "Sent. Check your inbox.",
+      "verifyError": "Could not resend right now. Try again in a minute."
+    },
+    "compare": {
+      "start": "Compare",
+      "cancel": "Cancel",
+      "selected": "{n} cars selected",
+      "go": "Compare {n} cars"
+    }
+  },
+  "voertuig": {
+    "loading": "Fetching from RDW…",
+    "notFound": "{plate} isn't in the RDW registry. Imported, scrapped, or transferred?",
+    "compare": {
+      "title": "Compare with another car",
+      "body": "Side-by-side: brand, fuel, APK, estimated value, and our AI verdict.",
+      "label": "Other plate",
+      "placeholder": "12-AB-345",
+      "go": "Compare",
+      "guestTitle": "Compare two cars (free RDW)",
+      "guestBody": "Sign up to see official RDW data side by side. Add a second plate and AI compare unlocks with a pass.",
+      "guestCta": "Sign up to compare"
+    },
+    "lite": {
+      "title": "Quick AI take on {plate}",
+      "badge": "Free · Lite",
+      "loading": "Generating a quick summary…",
+      "deepCta": "Open full chat for deep analysis"
+    },
+    "export": {
+      "panelTitle": "Export dossier · {plate}",
+      "panelLead": "Download a PDF with official RDW data, your free AI summary, and any full analysis you've unlocked. Includes a glossary of badges and fields.",
+      "title": "Auto Consul vehicle dossier",
+      "generated": "Generated",
+      "plate": "Plate",
+      "sectionLite": "AI summary (lite)",
+      "sectionDeep": "Full AI analysis",
+      "glossaryTitle": "Glossary: what the badges and fields mean",
+      "badgeDeep": "Full AI · 1 credit",
+      "disclaimer": "Indicative report from public RDW data and AI. Always verify before purchase. Auto Consul is not liable for decisions based on this export.",
+      "exportPdf": "Export PDF",
+      "exporting": "Preparing…",
+      "deepCta": "Run full analysis (1 credit)",
+      "deepLoading": "Analysing…",
+      "deepProgress": "Running the full analysis. This usually takes 5 to 10 seconds. You can leave this page; it'll be here when you come back.",
+      "deepResuming": "Picking up the analysis you started. Almost there…",
+      "deepReady": "Full analysis loaded",
+      "deepError": "Could not load full analysis.",
+      "needsUpgrade": "No credits left for a full analysis.",
+      "buyCredits": "Buy credits",
+      "pdfHint": "Your browser's print dialog opens. Choose Save as PDF. Include the full analysis first if you want it in the file.",
+      "rowYear": "First registration",
+      "rowRecall": "Open recall",
+      "rowWok": "WOK distrust",
+      "rowNap": "NAP odometer",
+      "rowSeats": "Seats",
+      "rowDoors": "Doors",
+      "yes": "Yes",
+      "no": "No",
+      "marketRange": "Market range",
+      "redFlags": "Red flags",
+      "pros": "Pros",
+      "cons": "Cons",
+      "checkBefore": "Check before buying",
+      "reliability": "Reliability",
+      "recalls": "Recalls",
+      "tax": "Tax notes",
+      "zones": "Emission zones",
+      "negotiation": "Negotiation points",
+      "glossary": [
+        "RDW · Official|Data from the Dutch vehicle registry (RDW). Authoritative for legal status, APK, recalls.",
+        "AI · Indicative|Generated summary, not a guarantee. Lite is free when signed in; full analysis costs 1 credit.",
+        "APK / MOT|Periodic roadworthiness inspection. Short validity can mean the seller expects expensive repairs soon.",
+        "NAP|National odometer register assessment. \"Logical\" is good; \"Illogical\" is a serious red flag.",
+        "WOK|Official distrust marker. Do not buy a car with active WOK status.",
+        "Open recall|Manufacturer safety campaign not yet completed at the workshop."
+      ]
+    },
+    "section": {
+      "algemeen": "General information",
+      "status": "Status",
+      "motorMilieu": "Engine & emissions",
+      "carrosserie": "Body & weights",
+      "apkHistorie": "APK history",
+      "marktaanbod": "Comparable cars for sale in NL",
+      "rdwSupporting": "Supporting RDW data"
+    },
+    "badge": {
+      "rdw": "RDW · Official",
+      "ai": "AI · Indicative",
+      "marktaanbod": "Live listings · External"
+    },
+    "ai": {
+      "lockedTitle": "Auto Consul AI analysis",
+      "lockedSubtitle": "Free during launch. Sign up to see:",
+      "lockedBullets": [
+        "Estimated market value (range)",
+        "Comparison with current models",
+        "Dutch tax benefits",
+        "Emission zones and future restrictions",
+        "Pros and cons at a glance",
+        "Chat with Auto Consul about this car"
+      ],
+      "lockedCta": "Sign up, free during launch",
+      "haveAccount": "I already have an account",
+      "locked": {
+        "intro": "Want more? A Single Pass unlocks the full report on this car:",
+        "cta": "Unlock full analysis for €4.95"
+      },
+      "teaser": {
+        "headline": "See the full analysis",
+        "sub": "Risk score, issues to check, negotiation room and 4 more sections, for this exact car.",
+        "cta": "Unlock for €4.95",
+        "riskScore": "Risk score",
+        "issuesFound": "Issues to check",
+        "negotiationRoom": "Negotiation room",
+        "bpmTax": "Estimated BPM / tax",
+        "fakeProse": "This 2016 BMW 318i has a mid-range running cost profile typical of F30-generation petrol sedans. Several APK history items suggest specific things to verify before purchase, and the asking-price range across comparable listings leaves room to negotiate.",
+        "point1": "Recent APK noted brake-wear comment, verify pads/disks",
+        "point2": "F30 N20 engine: check timing-chain history (known issue)",
+        "point3": "Below the median asking price for similar trims in the region"
+      },
+      "limit": {
+        "body": "You've hit today's {limit} free AI analyses. A Single Pass lifts the daily cap and unlocks the full report.",
+        "cta": "Unlock unlimited for €4.95"
+      },
+      "card": {
+        "title": "Auto Consul AI analysis",
+        "generatedAt": "Generated on {date}",
+        "samenvatting": "Summary",
+        "marktwaarde": "Estimated market value",
+        "vergelijking": "Compared to current models",
+        "belastingvoordelen": "Tax & company-car implications",
+        "milieuzones": "Emission zones & future restrictions",
+        "concurrenten": "Comparable models",
+        "aandachtspunten": "Things to check before buying",
+        "voordelen": "Pros",
+        "nadelen": "Cons",
+        "overigeOpmerkingen": "Other notes",
+        "disclaimer": "Indicative only, not a valuation or legal advice. Verify with the RDW, Belastingdienst or an independent expert before making binding decisions.",
+        "comingSoon": "AI analysis is rolling out. We're wiring the Vertex AI call. Sign up with a Google account in the header and you'll be among the first to see it once it goes live.",
+        "rateLimited": "You've hit today's AI-analysis limit. Please try again tomorrow."
+      },
+      "loading": {
+        "title": "Analysing this car…",
+        "steps": [
+          "Reading the RDW record…",
+          "Estimating market value…",
+          "Walking through Dutch tax rules…",
+          "Checking emission-zone status…",
+          "Looking up comparable models…",
+          "Summarising pros and cons…"
+        ]
+      }
+    },
+    "kosten": {
+      "title": "Monthly running costs",
+      "badge": "Indicative · Based on RDW + Dutch averages",
+      "subtitle": "An indication of what this car costs you per month. MRB road tax is calculated exactly; fuel, insurance and maintenance are estimates. See each line for assumptions.",
+      "help": "Estimate of the total monthly cost of owning this car. The road tax (MRB) is computed exactly from the official tables using weight, fuel type and your province. The other lines are realistic ranges; actual premiums and costs vary.",
+      "provinceLabel": "Province",
+      "perMonth": "/month",
+      "perQuarter": "/quarter",
+      "mrb": "Road tax (MRB)",
+      "mrbHelp": "Dutch motor-vehicle tax, paid quarterly to the Belastingdienst. Calculated from kerb weight × fuel type × provincial surcharge. Defaults to Noord-Holland (lowest surcharge at 67 %).",
+      "mrbMath": "Base {base} × ({pct} % provincial surcharge) = {total} per quarter",
+      "fuel": "Fuel",
+      "fuelHelp": "Estimated fuel cost based on the official RDW combined consumption (WLTP cycle) over 15 000 km/year at current pump prices. ±15 % spread for driving style.",
+      "fuelMeta": "At {km} km/year and {price}",
+      "insurance": "Insurance (estimate)",
+      "insuranceHelp": "Indicative third-party + comprehensive cover for an average driver. Real premium depends on age, no-claims history, postcode and chosen cover. Quote with a broker for a binding figure.",
+      "maintenance": "Maintenance",
+      "maintenanceHelp": "Service, oil, tyres and small repairs. Goes up with age, as older cars need more small fixes on average.",
+      "apk": "MOT reserve",
+      "apkHelp": "Monthly reserve for the annual / biennial MOT test plus the small repairs that typically come out of it.",
+      "disclaimer": "All figures are indicative. For binding numbers: consult the Belastingdienst (road tax), an insurance broker (premium) and an independent garage (maintenance).",
+      "province": {
+        "DR": "Drenthe",
+        "FL": "Flevoland",
+        "FR": "Fryslân",
+        "GE": "Gelderland",
+        "GR": "Groningen",
+        "LI": "Limburg",
+        "NB": "Noord-Brabant",
+        "NH": "Noord-Holland",
+        "OV": "Overijssel",
+        "UT": "Utrecht",
+        "ZE": "Zeeland",
+        "ZH": "Zuid-Holland"
+      }
+    },
+    "fab": {
+      "chat": "Chat about this car",
+      "aria": "Open chat about {plate}"
+    },
+    "chat": {
+      "title": "Ask anything about {plate}",
+      "subtitle": "Auto Consul has this car's full RDW dossier. Ask about price, taxes, emission zones, or anything else.",
+      "placeholder": "Ask a question about {plate}…",
+      "composerLabel": "Message",
+      "send": "Send",
+      "sending": "Sending…",
+      "you": "You",
+      "consul": "Consul",
+      "aria": "Chat about {plate}",
+      "toolRunning": "Tool {name} running…",
+      "rateLimited": "You've hit today's chat limit. Please try again tomorrow.",
+      "genericError": "Something went wrong with the chat.",
+      "samples": {
+        "value": "Is this a fair asking price for this car?",
+        "tax": "How much Dutch road tax (MRB) will I pay?",
+        "zones": "Can I drive this into central Amsterdam?"
+      },
+      "lockedBody": "Chat about this car is part of every paid pack. Single Pass €4.95 unlocks 10 questions on this dossier. Ask about price, taxes, emission zones, anything.",
+      "lockedCta": "Unlock chat with Single Pass €4.95",
+      "openFull": "Open in full chat"
+    },
+    "labels": {
+      "merk": "Make",
+      "model": "Model",
+      "voertuigsoort": "Vehicle type",
+      "inrichting": "Body style",
+      "kleur": "Colour",
+      "aantalDeuren": "Doors",
+      "aantalZitplaatsen": "Seats",
+      "nieuwprijs": "Original price",
+      "brutoBpm": "Gross BPM",
+      "datumEersteToelating": "First registration",
+      "datumEersteNlRegistratie": "First Dutch registration",
+      "datumTenaamstelling": "Current-owner registration",
+      "importauto": "Imported",
+      "europeseVoertuigcategorie": "EU vehicle category",
+      "typegoedkeuringsnummer": "Type-approval number",
+      "variantUitvoering": "Variant / trim",
+      "apkGeldigTot": "MOT (APK) valid until",
+      "wamVerzekerd": "Liability insured (WAM)",
+      "openstaandeTerugroepactie": "Open recall",
+      "wokStatus": "WOK status (awaiting inspection)",
+      "taxi": "Taxi",
+      "exported": "Exported",
+      "tenaamstellenMogelijk": "Registration possible",
+      "tellerstandoordeel": "Odometer assessment",
+      "laatsteTellerJaar": "Last odometer year",
+      "brandstof": "Fuel",
+      "vermogen": "Power",
+      "aantalCilinders": "Cylinders",
+      "cilinderinhoud": "Displacement",
+      "verbruikStad": "Consumption (city)",
+      "verbruikSnelweg": "Consumption (highway)",
+      "verbruikGecombineerd": "Consumption (combined)",
+      "co2Uitstoot": "CO₂ emissions",
+      "zuinigheidslabel": "Energy label",
+      "uitlaatemissieniveau": "Emission standard",
+      "emissiecode": "Emission code",
+      "hybrideKlasse": "Hybrid class",
+      "geluidRijdend": "Noise (driving)",
+      "geluidStationair": "Noise (stationary)",
+      "lengte": "Length",
+      "breedte": "Width",
+      "hoogte": "Height",
+      "wielbasis": "Wheelbase",
+      "aantalWielen": "Wheels",
+      "massaLedig": "Empty weight",
+      "massaRijklaar": "Curb weight",
+      "maxMassa": "Permitted max. weight",
+      "maxTrekkenOngeremd": "Max. towing (unbraked)",
+      "maxTrekkenGeremd": "Max. towing (braked)",
+      "vermogenMassa": "Power / weight"
+    },
+    "tile": {
+      "brandstof": "Fuel",
+      "vermogen": "Power",
+      "verbruik": "Consumption",
+      "apkTot": "MOT until"
+    },
+    "value": {
+      "yes": "Yes",
+      "no": "No",
+      "recallOpen": "Yes, check the recall register",
+      "recallClean": "No",
+      "wokAwaiting": "Awaiting inspection",
+      "wokNone": "No WOK",
+      "expired": "expired",
+      "noIssues": "No issues",
+      "issuesOne": "{n} issue",
+      "issuesMany": "{n} issues",
+      "unknownDate": "Unknown date"
+    },
+    "help": {
+      "openLabel": "Show explanation",
+      "brutoBpm": "BPM is the Dutch one-off registration tax charged when a car is first registered. It scales with CO₂ emissions and fuel type. For used cars this is purely historical; the buyer doesn't pay it again.",
+      "nieuwprijs": "The list price recorded by the RDW when the car was first registered. Not a current market value.",
+      "europeseVoertuigcategorie": "EU vehicle category. M1 = passenger car (up to 8 seats), N1 = light commercial (≤ 3,500 kg), L = motorcycle/moped. Drives licence and road-use rules.",
+      "typegoedkeuringsnummer": "The unique European type-approval number. Identifies the exact technical variant for regulators.",
+      "apkGeldigTot": "APK is the Dutch periodic technical inspection (equivalent of the UK MOT). Cars: first APK after 4 years, then every 2 years, and yearly once the car is 8+ years old.",
+      "wamVerzekerd": "Dutch mandatory third-party liability insurance (WAM). If 'No', the car cannot legally use public roads.",
+      "openstaandeTerugroepactie": "A manufacturer recall that has not yet been performed on this car. Usually fixed free of charge by a brand dealer. Ask the service book or call the dealer.",
+      "wokStatus": "Wacht Op Keuren: the RDW has flagged the vehicle (e.g. after damage or fraud suspicion) and requires re-inspection before it can be driven again.",
+      "tellerstandoordeel": "The Dutch National Auto Pass odometer assessment. 'Logical' means registered odometer readings rise consistently. 'Illogical' means potential tampering, which is a serious red flag.",
+      "co2Uitstoot": "CO₂ emissions in grams per kilometre under the WLTP cycle. Drives BPM tax and city emission-zone access.",
+      "zuinigheidslabel": "Energy label A (most efficient) to G (least efficient), relative to the vehicle category. Sometimes affects employer-leasing perks.",
+      "uitlaatemissieniveau": "Euro emission class (Euro 4, 5, 6 …). Determines whether the car may enter low-emission zones. Diesels below Euro 4 are often banned from Dutch city centres.",
+      "emissiecode": "Sub-category within the Euro emission class. Used by zero-emission zones and exemptions.",
+      "hybrideKlasse": "Mild hybrid (MHEV), full hybrid (HEV), plug-in hybrid (PHEV) or none. Affects tax incentives and charging needs.",
+      "massaLedig": "Empty vehicle weight, excluding driver, fuel and luggage.",
+      "massaRijklaar": "Ready-to-drive weight: empty vehicle + 90 % fuel + 75 kg driver. Used for Dutch road tax (MRB).",
+      "maxMassa": "Permitted maximum total weight. Vehicle + cargo + occupants must not exceed this.",
+      "maxTrekkenGeremd": "Maximum trailer / caravan weight when the trailer has its own brakes.",
+      "maxTrekkenOngeremd": "Maximum trailer weight when the trailer has no brakes, usually noticeably lower.",
+      "vermogenMassa": "Power per kilogram (kW/kg). A quick proxy for acceleration, useful for spotting sportier variants.",
+      "badgeRdw": "Official data from the Dutch RDW vehicle registry. Refreshed daily by the RDW itself.",
+      "badgeAi": "Interpretation by Auto Consul AI based on RDW data plus general market knowledge. Indicative, so verify before making binding decisions.",
+      "badgeMarktaanbod": "Live listings from third-party marketplaces, pulled via Google. External pricing, not curated by us."
+    },
+    "explainer": {
+      "toggle": "What's in this section?",
+      "algemeen": "The car's identity: make, model, colour, first-registration date and the original list price. This is what the RDW formally knows about the vehicle.",
+      "status": "Today's legal and technical status. Is this car road-legal right now? Insured, with a valid MOT, and free of open recalls or warnings?",
+      "motorMilieu": "Engine and emissions data. Fuel, power, consumption, CO₂ output and Euro emission class. Largely determines where the car may drive and what road tax it pays.",
+      "carrosserie": "Dimensions and weights. Matters for road tax (kerb weight), maximum tow weight for caravans/trailers, and garage or parking constraints.",
+      "apkHistorie": "Every APK inspection on file, with date, type and any points raised. Repeated defects over time often tell a story."
+    }
+  },
+  "recent": {
+    "label": "Recent:",
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "remove": "Remove {plate}"
+  },
+  "pwa": {
+    "install": {
+      "label": "Install Auto Consul",
+      "title": "Install Auto Consul",
+      "subtitle": "Add to your home screen for one-tap access. No app store required.",
+      "cta": "Install",
+      "dismiss": "Not now"
+    }
+  },
+  "errors": {
+    "invalidPlate": "That doesn't look like a valid Dutch plate.",
+    "lookupFailed": "Lookup failed.",
+    "rateLimited": "Too many lookups. Try again in {minutes} minutes.",
+    "generic": "Something went wrong."
+  },
+  "language": {
+    "label": "Language",
+    "nl": "NL",
+    "en": "EN"
+  },
+  "trademark": "Brand logos and trademarks are the property of their respective owners.",
+  "cookies": {
+    "bannerText": "We use strictly-necessary local storage for your recent searches and language choice. No tracking.",
+    "bannerLink": "Read more",
+    "bannerAccept": "OK",
+    "bannerDeny": "Prefer not"
+  },
+  "footer": {
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "about": "Auto Consul combines the official RDW Open Data with AI-driven explanations so you know exactly what you're getting into before you buy a car. Independent and free for anonymous searches.",
+    "productHeading": "Product",
+    "productLinks": ["Home", "How it works", "About", "Blog"],
+    "legalHeading": "Legal",
+    "contactHeading": "Contact",
+    "builtIn": "Built in the Netherlands",
+    "trademark": "Brand logos are the property of their respective owners."
+  }
+}

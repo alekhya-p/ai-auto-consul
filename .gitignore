@@ -1,0 +1,32 @@
+# Build / deploy caches
+.firebase/
+node_modules/
+dist/
+*.log
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Python (agent-v2)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Java / Maven (not in this repo, but ignore if present)
+target/
+
+# Terraform (not in this repo)
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# Secrets
+.env
+.env.local
+*.pem

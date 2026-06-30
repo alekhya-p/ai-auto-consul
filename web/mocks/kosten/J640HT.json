@@ -1,0 +1,43 @@
+{
+  "kenteken": "J640HX",
+  "province": "NH",
+  "mrb": {
+    "baseQuarterEur": 81,
+    "fuelSurchargeQuarterEur": 0,
+    "provincialOpcentenPercent": 67,
+    "totalQuarterEur": 135,
+    "monthEur": 45,
+    "fuelClass": "benzine",
+    "weightKg": 1565
+  },
+  "fuel": {
+    "lowEur": 154,
+    "highEur": 209,
+    "midpointEur": 181
+  },
+  "insurance": {
+    "lowEur": 95,
+    "highEur": 145,
+    "midpointEur": 120
+  },
+  "maintenance": {
+    "lowEur": 20,
+    "highEur": 45,
+    "midpointEur": 32
+  },
+  "apkReservering": {
+    "lowEur": 0,
+    "highEur": 5,
+    "midpointEur": 2
+  },
+  "total": {
+    "lowEur": 314,
+    "highEur": 449,
+    "midpointEur": 381
+  },
+  "assumptions": {
+    "kilometersPerYear": 15000,
+    "fuelPriceEurPerLiter": 2.05,
+    "fuelPriceLabel": "€ 2,05 / L benzine"
+  }
+}

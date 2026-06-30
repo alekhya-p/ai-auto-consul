@@ -1,0 +1,47 @@
+{
+  "samenvatting": "Opel Karl 2017 (RN-923-N) - solide budgetkeuze voor stadsgebruik. RDW-dossier is schoon: APK geldig, geen recalls, WAM actief. Marktband € 4.500-€ 6.500 past bij deze km-klasse. Onderhandel op basis van APK-adviseringen en vraag onderhoudsboekje.",
+  "marktwaarde": {
+    "schattingEur": "€ 4.500 - € 6.500",
+    "fairPriceEur": "€ 5.200",
+    "explanation": "Fair price midden in de band voor een exemplaar met logische tellerstand, geldige APK en complete dealer-onderhoudshistorie.",
+    "depreciationOutlook": "Verwachte waardedaling ~8-12% per jaar de komende 3 jaar in dit segment."
+  },
+  "redFlags": [
+    "APK-adviseringen op uitlaatbevestiging en remcorrosie - budget € 200-400",
+    "Geen moderne ADAS - hogere verzekeringspremie bij jonge bestuurders",
+    "2030 zero-emission zones kunnen stadsgebruik beperken"
+  ],
+  "pros": [
+    "Lage totale eigendomskosten (MRB, verzekering, verbruik)",
+    "Betrouwbare 1.0L driecilinder, goedkoop onderhoud",
+    "Euro 6 - geen milieuzone-problemen tot 2030"
+  ],
+  "cons": [
+    "Krappe achterbank en bagageruimte",
+    "Beperkte restwaarde vs. Toyota/Hyundai",
+    "Snelwegcomfort matig"
+  ],
+  "thingsToCheckBeforeBuying": [
+    "Volledig onderhoudsboekje en APK-facturen",
+    "NAP-rapport of Carfax",
+    "Proefrit: remmen, uitlaatrattle, AC-koeling",
+    "Hefbrug-inspectie op roest onderzijde"
+  ],
+  "reliabilityNotes": "Opel Karl scoort gemiddeld in betrouwbaarheidsonderzoeken; 1.0L motor is eenvoudig en goedkoop te repareren.",
+  "recallSummary": "Geen open terugroepacties geregistreerd bij RDW.",
+  "dutchTaxNotes": "MRB ~€ 38/maand (NH). BPM reeds betaald bij eerste registratie.",
+  "emissionZonesAndBans": "Vrij toegang alle NL milieuzones tot 2030; plan zero-emission beperkingen mee bij langetermijnbezit.",
+  "negotiationLeverage": [
+    "APK-adviseringen niet opgelost - vraag € 300-500 korting",
+    "Vergelijk met vergelijkbare Karl's op Marktplaats binnen 50 km",
+    "Energielabel B - geen fiscaal voordeel vs. modernere A-label concurrent"
+  ],
+  "bestAlternatives": [
+    { "model": "Hyundai i10", "whyBetter": "Modernere veiligheid, betere restwaarde" },
+    { "model": "Kia Picanto", "whyBetter": "Langere fabrieksgarantie, vergelijkbaar formaat" }
+  ],
+  "comparisonWithCurrentModels": "T.o.v. nieuwe stadsauto's mist de Karl CarPlay draadloos en ADAS - maar kost € 20k+ minder nieuw.",
+  "competitorBrands": ["Hyundai", "Kia", "Toyota", "Volkswagen"],
+  "confidence": "medium-high",
+  "generatedAt": "2026-05-15T10:12:00Z"
+}
