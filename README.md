@@ -14,6 +14,12 @@
 
 ---
 
+<p align="center">
+  <img src="docs/marketing-assets/og/og-main.png" alt="Auto-Consul home" width="720" />
+  <br />
+  <em>Home - research any Dutch plate</em>
+</p>
+
 ## The problem
 
 Buying a second-hand car in the Netherlands means jumping between RDW lookups, NAP checks, APK history, insurance quotes, and forum threads - then still wondering whether the asking price is fair. Generic chatbots guess; they don’t cite registry facts or show their work.
