@@ -94,7 +94,7 @@ async function capturePoster(browser) {
   const page = await ctx.newPage();
   await page.goto(
     stageUrl(
-      `/voertuig/J650NX${DOSSIER_AUTH}`,
+      `/voertuig/A898CD${DOSSIER_AUTH}`,
       "Enter a plate. Get the dossier.",
       "RDW facts, AI analysis, and export — then chat.",
     ),
@@ -175,7 +175,7 @@ async function main() {
   // Beat 1 — signed-in dossier with AI section visible
   await page.goto(
     stageUrl(
-      `/voertuig/J650NX${DOSSIER_AUTH}`,
+      `/voertuig/A898CD${DOSSIER_AUTH}`,
       "Enter a plate. Get the dossier.",
       "RDW facts, AI analysis, and export — then chat.",
     ),
@@ -221,7 +221,7 @@ async function main() {
   );
 
   const chatUrl =
-    `${BASE}/v2/chat?mockAuth=on&mockTier=pass&plate=J650NX`;
+    `${BASE}/v2/chat?mockAuth=on&mockTier=pass&plate=A898CD`;
   await frame.goto(chatUrl, { waitUntil: "load", timeout: 30000 });
   await frame.waitForSelector(".cv2-empty", { timeout: 20000 });
   await page.waitForTimeout(1200);

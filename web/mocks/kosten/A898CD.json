@@ -1,0 +1,43 @@
+{
+  "kenteken": "A898CD",
+  "province": "NH",
+  "mrb": {
+    "baseQuarterEur": 140,
+    "fuelSurchargeQuarterEur": 0,
+    "provincialOpcentenPercent": 67,
+    "totalQuarterEur": 234,
+    "monthEur": 78,
+    "fuelClass": "benzine",
+    "weightKg": 1475
+  },
+  "fuel": {
+    "lowEur": 120,
+    "highEur": 160,
+    "midpointEur": 143
+  },
+  "insurance": {
+    "lowEur": 75,
+    "highEur": 120,
+    "midpointEur": 95
+  },
+  "maintenance": {
+    "lowEur": 60,
+    "highEur": 130,
+    "midpointEur": 85
+  },
+  "apkReservering": {
+    "lowEur": 5,
+    "highEur": 15,
+    "midpointEur": 10
+  },
+  "total": {
+    "lowEur": 338,
+    "highEur": 503,
+    "midpointEur": 411
+  },
+  "assumptions": {
+    "kilometersPerYear": 15000,
+    "fuelPriceEurPerLiter": 2.05,
+    "fuelPriceLabel": "€ 2,05 / L benzine"
+  }
+}

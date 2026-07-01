@@ -1,0 +1,85 @@
+{
+  "kenteken": "A898CD",
+  "found": true,
+  "algemeen": {
+    "merk": "BMW",
+    "model": "3-SERIE (320I)",
+    "voertuigsoort": "Personenauto",
+    "inrichting": "sedan",
+    "eersteKleur": "Zwart",
+    "tweedeKleur": null,
+    "nieuwprijsEuro": 54500,
+    "brutoBpmEuro": 6250,
+    "aantalDeuren": 4,
+    "aantalZitplaatsen": 5,
+    "datumEersteToelating": "2020-09-15",
+    "datumEersteNlRegistratie": "2020-09-15",
+    "datumTenaamstelling": "2024-11-20",
+    "importauto": false,
+    "europeseVoertuigcategorie": "M1",
+    "typegoedkeuringsnummer": "e1*2007/46*1947*05",
+    "variant": "5F31",
+    "uitvoering": "IAW500B0"
+  },
+  "motorMilieu": {
+    "brandstof": "Benzine",
+    "aantalCilinders": 4,
+    "cilinderinhoudCc": 1998,
+    "vermogenKw": 135,
+    "vermogenPk": 184,
+    "verbruikStad": 7.1,
+    "verbruikSnelweg": 4.8,
+    "verbruikGecombineerd": 5.6,
+    "co2GecombineerdGperKm": 128,
+    "zuinigheidslabel": "C",
+    "uitlaatemissieniveau": "EURO 6D",
+    "emissiecode": "6",
+    "hybrideKlasse": null,
+    "geluidsniveauRijdend": 68,
+    "geluidsniveauStationair": 78
+  },
+  "carrosserie": {
+    "lengteCm": 471,
+    "breedteCm": 183,
+    "hoogteCm": 144,
+    "wielbasisCm": 285,
+    "aantalWielen": 4,
+    "massaLedigKg": 1475,
+    "massaRijklaarKg": 1575,
+    "toegestaneMaximumMassaKg": 2085,
+    "maxTrekkenOngeremdKg": 750,
+    "maxTrekkenGeremdKg": 1600,
+    "vermogenMassarijklaar": 0.12
+  },
+  "status": {
+    "apkGeldigTot": "2026-09-15",
+    "apkGeldig": true,
+    "wamVerzekerd": true,
+    "openstaandeTerugroepactie": false,
+    "wokStatus": false,
+    "wokToelichting": null,
+    "taxi": false,
+    "exported": false,
+    "tenaamstellenMogelijk": true,
+    "tellerstandoordeel": "Logisch",
+    "laatsteRegistratieTellerstandJaar": 2025
+  },
+  "apkHistorie": [
+    {
+      "datum": "2024-09-12",
+      "tijd": "10:15",
+      "soort": "APK Lichte voertuigen",
+      "resultaat": "Periodieke controle - goedgekeurd",
+      "aandachtspunten": [
+        "Band(en) aanwezig met een profieldiepte van 1,6 t/m 2,5 mm"
+      ]
+    },
+    {
+      "datum": "2022-09-08",
+      "tijd": "11:30",
+      "soort": "APK Lichte voertuigen",
+      "resultaat": "Periodieke controle - goedgekeurd",
+      "aandachtspunten": []
+    }
+  ]
+}

@@ -35,7 +35,7 @@ const APP_CSS = [
 ].join("");
 
 const DOSSIER_AUTH = "?mockAuth=on&mockTier=pass";
-const COMPARE_PRO = "?plates=J650NX,J640HT&mockAuth=on&mockTier=pro";
+const COMPARE_PRO = "?plates=A898CD,J640HT&mockAuth=on&mockTier=pro";
 
 const SCENES = [
   {
@@ -46,14 +46,14 @@ const SCENES = [
   },
   {
     id: "dossier",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     waitFor: ".hero-card",
     waitMs: 3500,
     vh: 900,
   },
   {
     id: "dossier-ai",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     waitFor: ".dossier-lite-summary",
     scrollTo: ".dossier-lite-analysis",
     waitMs: 1200,
@@ -61,7 +61,7 @@ const SCENES = [
   },
   {
     id: "dossier-export",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     waitFor: ".dossier-export-preview-deep p",
     scrollTo: ".dossier-export-panel",
     waitMs: 1500,
@@ -69,7 +69,7 @@ const SCENES = [
   },
   {
     id: "chat",
-    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=J650NX&session=marketing-demo",
+    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=A898CD&session=marketing-demo",
     waitFor: ".cv2-messages-wrapper .vehicle-data-card",
     waitMs: 2000,
   },
@@ -90,7 +90,7 @@ const SCENES = [
     waitFor: ".compare-table .compare-plate-head",
     waitForCount: 2,
     waitForReady: ".compare-row-wide",
-    waitForText: /Opel Karl/,
+    waitForText: /BMW/i,
     waitMs: 1500,
     scrollTo: ".compare-row-ai",
     waitTimeoutMs: 30000,

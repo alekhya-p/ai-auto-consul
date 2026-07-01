@@ -21,9 +21,9 @@ describe("prettyPlate", () => {
     // sidecode 8 - D-LLL-DD
     ["1ABC23", "1-ABC-23"],
     // sidecode 9 - LL-DDD-L
-    ["J650NX", "RN-923-N"],
+    ["A898CD", "A-898-CD"],
     // sidecode 10 - L-DDD-LL
-    ["J640HX", "J-640-HT"],
+    ["J640HX", "J-640-HX"],
   ])("formats %s as %s", (input, expected) => {
     expect(prettyPlate(input)).toBe(expected);
   });

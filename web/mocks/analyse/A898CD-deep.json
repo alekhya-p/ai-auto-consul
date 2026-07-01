@@ -1,0 +1,47 @@
+{
+  "samenvatting": "BMW 3-Serie 320i 2020 (A-898-CD) - uitstekende, premium keuze in het sportieve sedanklassensegment. Het RDW-dossier is perfect schoon: APK geldig, geen openstaande recalls en WAM-verzekering actief. Marktband € 32.000-€ 38.000 past uitstekend bij de huidige markt voor deze leeftijdsklasse.",
+  "marktwaarde": {
+    "schattingEur": "€ 32.000 - € 38.000",
+    "fairPriceEur": "€ 34.500",
+    "explanation": "Middenprijs voor een origineel Nederlandse auto met een logische tellerstand, volledige dealerhistorie en in een gewilde uitvoering (zoals High Executive of M Sport).",
+    "depreciationOutlook": "Houdt zijn waarde goed in vergelijking met directe concurrenten; verwachte afschrijving ~10-15% per jaar."
+  },
+  "redFlags": [
+    "Complex elektrisch systeem en software - vraag of alle iDrive-updates zijn uitgevoerd.",
+    "Bandenprofiel achterzijde; door achterwielaandrijving slijten achterbanden sneller.",
+    "Hogere maandelijkse lasten (verzekering en wegenbelasting) t.o.v. reguliere gezinsauto's."
+  ],
+  "pros": [
+    "Heerlijke sportieve rijeigenschappen en superieure wegligging",
+    "Zeer stille en comfortabele cabine op snelwegsnelheid",
+    "Krachtige 2.0L B48 motor gekoppeld aan de sublieme ZF 8-traps automaat"
+  ],
+  "cons": [
+    "Krappe instap en beenruimte achterin in vergelijking met een stationwagon of SUV",
+    "Hoge onderhouds- en onderdelenkosten bij de officiële merkdealer",
+    "Veel opties waren destijds prijzig, controleer goed welke systemen daadwerkelijk aanwezig zijn"
+  ],
+  "thingsToCheckBeforeBuying": [
+    "Digitale onderhoudshistorie in het iDrive-boordsysteem (volledig dealeronderhouden?)",
+    "Beschadigingen aan de dure 18- of 19-inch lichtmetalen velgen (stoeprandschade)",
+    "Proefrit: de ZF-automaat moet onder alle omstandigheden schokvrij schakelen",
+    "Luister bij koude start specifiek naar de distributieketting op eventuele bijgeluiden"
+  ],
+  "reliabilityNotes": "De G20-generatie van de 3-serie staat bekend als uiterst betrouwbaar. De B48-turbomotor en ZF-automaat vormen een extreem robuuste en bewezen combinatie.",
+  "recallSummary": "Geen openstaande terugroepacties geregistreerd bij de RDW.",
+  "dutchTaxNotes": "MRB ~€ 78/maand (NH). BPM is volledig voldaan bij de eerste registratie.",
+  "emissionZonesAndBans": "Euro 6d - onbeperkte en vrije toegang tot alle milieuzones in Nederland en de rest van Europa.",
+  "negotiationLeverage": [
+    "Aankomende onderhoudsbeurt (remblokken/olie) - vraag om € 400-600 korting",
+    "Runflat banden met weinig profiel - runflats zijn aanzienlijk duurder in vervanging",
+    "Ontbreken van gewilde opties (zoals Head-up Display of Harman Kardon) verlaagt de marktwaarde"
+  ],
+  "bestAlternatives": [
+    { "model": "Audi A4 2.0 TFSI", "whyBetter": "Iets comfortabeler geveerd en vaak rijker uitgerust voor dezelfde prijs" },
+    { "model": "Mercedes-Benz C200", "whyBetter": "Klassiekere luxe-uitstraling en comfortabeler weggedrag" }
+  ],
+  "comparisonWithCurrentModels": "T.o.v. de allernieuwste LCI-modellen heeft deze 2020 variant nog fysieke knoppen voor de klimaatregeling (ergonomisch voordeel) en het betrouwbare pre-LCI design.",
+  "competitorBrands": ["Audi", "Mercedes-Benz", "Volvo", "Alfa Romeo"],
+  "confidence": "high",
+  "generatedAt": "2026-05-15T10:12:00Z"
+}

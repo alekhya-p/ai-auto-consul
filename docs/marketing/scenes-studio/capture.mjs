@@ -35,7 +35,7 @@ const APP_CSS = [
 ].join("");
 
 const DOSSIER_AUTH = "?mockAuth=on&mockTier=pass";
-const COMPARE_PRO = "?plates=J650NX,J640HT&mockAuth=on&mockTier=pro";
+const COMPARE_PRO = "?plates=A898CD,J640HT&mockAuth=on&mockTier=pro";
 
 const SCENES = [
   {
@@ -48,7 +48,7 @@ const SCENES = [
   },
   {
     id: "dossier",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     headline: "Sourced vehicle dossier.",
     sub: "Registry facts, market listings, and AI insights when signed in.",
     waitFor: ".hero-card",
@@ -57,7 +57,7 @@ const SCENES = [
   },
   {
     id: "dossier-ai",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     headline: "AI lite analysis on the dossier.",
     sub: "Summary, market band, and buyer flags — no chat required.",
     waitFor: ".dossier-lite-summary",
@@ -67,7 +67,7 @@ const SCENES = [
   },
   {
     id: "dossier-export",
-    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
+    path: `/voertuig/A898CD${DOSSIER_AUTH}`,
     headline: "Export a full buyer report.",
     sub: "PDF with RDW facts, lite AI, and cached deep analysis preview.",
     waitFor: ".dossier-export-preview-deep p",
@@ -77,7 +77,7 @@ const SCENES = [
   },
   {
     id: "chat",
-    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=J650NX&session=marketing-demo",
+    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=A898CD&session=marketing-demo",
     headline: "Ask in plain language.",
     sub: "Tool cards surface RDW data and analysis inline.",
     waitFor: ".cv2-messages-wrapper .vehicle-data-card",
@@ -100,11 +100,11 @@ const SCENES = [
     id: "compare",
     path: `/compare${COMPARE_PRO}`,
     headline: "Compare plates side by side.",
-    sub: "Opel Karl vs BMW 318i — RDW, costs, and AI summaries in one table.",
+    sub: "BMW 320i vs BMW 318i — RDW, costs, and AI summaries in one table.",
     waitFor: ".compare-table .compare-plate-head",
     waitForCount: 2,
     waitForReady: ".compare-row-wide",
-    waitForText: /Opel Karl/,
+    waitForText: /BMW/i,
     waitMs: 1500,
     scrollTo: ".compare-row-ai",
     waitTimeoutMs: 30000,

@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://www.autoconsul.nl">Website</a> ·
-  <a href="https://www.autoconsul.nl/voertuig/J650NX">Example dossier</a> ·
+  <a href="https://www.autoconsul.nl/voertuig/KHV50Z">Example dossier</a> ·
   <a href="https://www.autoconsul.nl/prijzen">Pricing</a>
 </p>
 
@@ -38,7 +38,7 @@ Lookup on the home page or go straight to a vehicle. Registry facts, APK status,
 <p align="center">
   <img src="docs/screenshots/dossier-phone.png" alt="Vehicle dossier on mobile" width="360" />
   <br />
-  <em>Dossier - RDW facts for RN-923-N (Opel Karl)</em>
+  <em>Dossier - RDW facts for A-898-CD (BMW 320i)</em>
 </p>
 
 ### AI analysis on the dossier
@@ -63,10 +63,10 @@ Export PDF bundles RDW data with lite and deep AI previews - ready for a viewing
 
 ### Compare two (or three) cars
 
-See monthly costs, estimated value, and AI summaries in one table - e.g. budget Opel vs premium BMW.
+See monthly costs, estimated value, and AI summaries in one table - e.g. premium BMW 320i vs sport BMW 318i.
 
 <p align="center">
-  <img src="docs/screenshots/compare-desktop.png" alt="Compare Opel Karl vs BMW 318i" width="720" />
+  <img src="docs/screenshots/compare-desktop.png" alt="Compare BMW 320i vs BMW 318i" width="720" />
   <br />
   <em>Compare - costs and AI summaries side by side</em>
 </p>
@@ -91,7 +91,7 @@ Start without a plate: greet the agent, see suggested questions, and get a clear
   <em>Onboarding chat - greeting, capabilities, Dutch + English follow-ups</em>
 </p>
 
-> All captures above use **mock data** (`J650NX`, `J640HX`) from `web/mocks/` for offline marketing and dev. The live app at [autoconsul.nl](www.autoconsul.nl) uses production backends.
+> All captures above use **mock data** (`A898CD`, `J640HX`) from `web/mocks/` for offline marketing and dev. The live app at [autoconsul.nl](www.autoconsul.nl) uses production backends.
 
 ---
 
@@ -180,19 +180,19 @@ npm install
 npm run dev:mock
 ```
 
-Open http://localhost:5173/voertuig/J650NX
+Open http://localhost:5173/voertuig/A898CD
 
 | Page | URL |
 |------|-----|
 | Home | http://localhost:5173/ |
-| Dossier (Opel) | http://localhost:5173/voertuig/J650NX |
+| Dossier (BMW 320i) | http://localhost:5173/voertuig/A898CD |
 | Dossier (BMW) | http://localhost:5173/voertuig/J640HX |
-| Chat (mock agent) | http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX |
-| Chat (demo thread) | http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX&session=marketing-demo |
+| Chat (mock agent) | http://localhost:5173/v2/chat?mockAuth=on&plate=A898CD |
+| Chat (demo thread) | http://localhost:5173/v2/chat?mockAuth=on&plate=A898CD&session=marketing-demo |
 | Chat (onboarding) | http://localhost:5173/v2/chat?mockAuth=on&session=marketing-onboarding |
-| Compare (2 cars, AI) | http://localhost:5173/compare?plates=J650NX,J640HX&mockAuth=on&mockTier=pro |
+| Compare (2 cars, AI) | http://localhost:5173/compare?plates=A898CD,J640HX&mockAuth=on&mockTier=pro |
 
-**Mocks:** JSON fixtures under `web/mocks/` when you run `dev:mock`. Try plates **`J650NX`** (Opel) or **`J640HX`** (BMW). See [`web/mocks/README.md`](web/mocks/README.md).
+**Mocks:** JSON fixtures under `web/mocks/` when you run `dev:mock`. Try plates **`A898CD`** (BMW 320i) or **`J640HX`** (BMW 318i). See [`web/mocks/README.md`](web/mocks/README.md).
 
 ---
 
