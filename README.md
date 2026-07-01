@@ -3,13 +3,13 @@
 **The Dutch used-car buyer’s co-pilot** - enter a kenteken, get an RDW-sourced dossier, AI analysis, side-by-side compare, and a chat agent that answers in plain language with verified tool cards.
 
 <p align="center">
-  <a href="https://auto-consul-app-dev.web.app"><strong>→ Live app: autoconsul.nl</strong></a>
+  <a href="https://www.autoconsul.nl"><strong>→ Live app: autoconsul.nl</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://auto-consul-app-dev.web.app">Website</a> ·
-  <a href="https://auto-consul-app-dev.web.app/voertuig/RN923N">Example dossier</a> ·
-  <a href="https://auto-consul-app-dev.web.app/prijzen">Pricing</a>
+  <a href="https://www.autoconsul.nl">Website</a> ·
+  <a href="https://www.autoconsul.nl/voertuig/J650NX">Example dossier</a> ·
+  <a href="https://www.autoconsul.nl/prijzen">Pricing</a>
 </p>
 
 ---
@@ -91,7 +91,7 @@ Start without a plate: greet the agent, see suggested questions, and get a clear
   <em>Onboarding chat - greeting, capabilities, Dutch + English follow-ups</em>
 </p>
 
-> All captures above use **mock data** (`RN923N`, `J640HX`) from `web/mocks/` for offline marketing and dev. The live app at [autoconsul.nl](https://auto-consul-app-dev.web.app) uses production backends.
+> All captures above use **mock data** (`J650NX`, `J640HX`) from `web/mocks/` for offline marketing and dev. The live app at [autoconsul.nl](www.autoconsul.nl) uses production backends.
 
 ---
 
@@ -180,19 +180,19 @@ npm install
 npm run dev:mock
 ```
 
-Open http://localhost:5173/voertuig/RN923N
+Open http://localhost:5173/voertuig/J650NX
 
 | Page | URL |
 |------|-----|
 | Home | http://localhost:5173/ |
-| Dossier (Opel) | http://localhost:5173/voertuig/RN923N |
+| Dossier (Opel) | http://localhost:5173/voertuig/J650NX |
 | Dossier (BMW) | http://localhost:5173/voertuig/J640HX |
-| Chat (mock agent) | http://localhost:5173/v2/chat?mockAuth=on&plate=RN923N |
-| Chat (demo thread) | http://localhost:5173/v2/chat?mockAuth=on&plate=RN923N&session=marketing-demo |
+| Chat (mock agent) | http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX |
+| Chat (demo thread) | http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX&session=marketing-demo |
 | Chat (onboarding) | http://localhost:5173/v2/chat?mockAuth=on&session=marketing-onboarding |
-| Compare (2 cars, AI) | http://localhost:5173/compare?plates=RN923N,J640HX&mockAuth=on&mockTier=pro |
+| Compare (2 cars, AI) | http://localhost:5173/compare?plates=J650NX,J640HX&mockAuth=on&mockTier=pro |
 
-**Mocks:** JSON fixtures under `web/mocks/` when you run `dev:mock`. Try plates **`RN923N`** (Opel) or **`J640HX`** (BMW). See [`web/mocks/README.md`](web/mocks/README.md).
+**Mocks:** JSON fixtures under `web/mocks/` when you run `dev:mock`. Try plates **`J650NX`** (Opel) or **`J640HX`** (BMW). See [`web/mocks/README.md`](web/mocks/README.md).
 
 ---
 

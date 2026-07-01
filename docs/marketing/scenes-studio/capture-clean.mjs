@@ -35,7 +35,7 @@ const APP_CSS = [
 ].join("");
 
 const DOSSIER_AUTH = "?mockAuth=on&mockTier=pass";
-const COMPARE_PRO = "?plates=RN923N,J640HT&mockAuth=on&mockTier=pro";
+const COMPARE_PRO = "?plates=J650NX,J640HT&mockAuth=on&mockTier=pro";
 
 const SCENES = [
   {
@@ -46,14 +46,14 @@ const SCENES = [
   },
   {
     id: "dossier",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     waitFor: ".hero-card",
     waitMs: 3500,
     vh: 900,
   },
   {
     id: "dossier-ai",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     waitFor: ".dossier-lite-summary",
     scrollTo: ".dossier-lite-analysis",
     waitMs: 1200,
@@ -61,7 +61,7 @@ const SCENES = [
   },
   {
     id: "dossier-export",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     waitFor: ".dossier-export-preview-deep p",
     scrollTo: ".dossier-export-panel",
     waitMs: 1500,
@@ -69,7 +69,7 @@ const SCENES = [
   },
   {
     id: "chat",
-    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=RN923N&session=marketing-demo",
+    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=J650NX&session=marketing-demo",
     waitFor: ".cv2-messages-wrapper .vehicle-data-card",
     waitMs: 2000,
   },

@@ -18,7 +18,7 @@ npm install
 npm run dev:mock
 ```
 
-No agent, no Firebase required for dossier pages. Plates: `RN923N`, `J640HX`.
+No agent, no Firebase required for dossier pages. Plates: `J650NX`, `J640HX`.
 
 ### Screenshots (local)
 

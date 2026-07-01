@@ -15,7 +15,7 @@ Open http://localhost:5173/
 
 | Request | Fixture / handler |
 |---------|-------------------|
-| `GET /v1/voertuig/RN923N` | `voertuig/RN923N.json` (Opel Karl) |
+| `GET /v1/voertuig/J650NX` | `voertuig/J650NX.json` (Opel Karl) |
 | `GET /v1/voertuig/J640HX` | `voertuig/J640HX.json` (BMW 318i) |
 | `GET /v1/voertuig/<other>` | `voertuig/_notfound.json` |
 | `GET /v1/voertuig/<plate>/kosten` | `kosten/<plate>.json` or `kosten/_default.json` |
@@ -33,10 +33,10 @@ No Python agent required. The UI uses the **same CopilotKit path** as production
 
 ```bash
 # Interactive - type a question, get RDW tool card + answer
-http://localhost:5173/v2/chat?mockAuth=on&plate=RN923N
+http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX
 
 # Pre-filled marketing thread (RDW tool card)
-http://localhost:5173/v2/chat?mockAuth=on&plate=RN923N&session=marketing-demo
+http://localhost:5173/v2/chat?mockAuth=on&plate=J650NX&session=marketing-demo
 
 # Onboarding / capabilities thread (no plate)
 http://localhost:5173/v2/chat?mockAuth=on&session=marketing-onboarding

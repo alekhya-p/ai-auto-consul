@@ -90,7 +90,7 @@ function loadRdwFixture(mocksRoot, plate) {
   const specific = resolve(mocksRoot, "voertuig", `${key}.json`);
   const detail = existsSync(specific)
     ? readJson(specific)
-    : readJson(resolve(mocksRoot, "voertuig", "RN923N.json"));
+    : readJson(resolve(mocksRoot, "voertuig", "J650NX.json"));
   if (!detail) {
     return {
       found: true,
@@ -123,7 +123,7 @@ function extractPlate(context, userText, messages) {
     const hit = String(m.content ?? "").match(/\b([A-Z0-9]{2}-?[A-Z0-9]{2,3}-?[A-Z0-9]{1,2})\b/i);
     if (hit) return normalizePlate(hit[1]);
   }
-  return "RN923N";
+  return "J650NX";
 }
 
 function extractLang(context) {
@@ -478,7 +478,7 @@ export async function handleMockAgentRoutes(req, res, url, mocksRoot) {
 
   if (path === "/v2/analysis" && req.method === "GET") {
     const plateMatch = url.match(/[?&]plate=([A-Z0-9]+)/i);
-    const plate = plateMatch ? plateMatch[1].toUpperCase() : "RN923N";
+    const plate = plateMatch ? plateMatch[1].toUpperCase() : "J650NX";
     const deep = /[?&]deep=true/.test(url);
     const peek = /[?&]peek=true/.test(url);
     const raw = loadAnalyseFixture(mocksRoot, plate, deep);

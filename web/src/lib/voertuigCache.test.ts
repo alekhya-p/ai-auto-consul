@@ -21,7 +21,7 @@ describe("prettyPlate", () => {
     // sidecode 8 - D-LLL-DD
     ["1ABC23", "1-ABC-23"],
     // sidecode 9 - LL-DDD-L
-    ["RN923N", "RN-923-N"],
+    ["J650NX", "RN-923-N"],
     // sidecode 10 - L-DDD-LL
     ["J640HX", "J-640-HT"],
   ])("formats %s as %s", (input, expected) => {

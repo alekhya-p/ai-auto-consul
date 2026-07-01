@@ -133,7 +133,7 @@ function mockApiPlugin(): PluginOption {
           let raw = "";
           req.on("data", (c) => (raw += c));
           req.on("end", () => {
-            let plate = "RN923N";
+            let plate = "J650NX";
             try {
               plate = (JSON.parse(raw) as { plate?: string }).plate?.toUpperCase() ?? plate;
             } catch {
@@ -190,8 +190,8 @@ function mockApiPlugin(): PluginOption {
       // Eye-catching log line so it's obvious you're in mock mode.
       console.log(
         "\n  \x1b[33m▶ Mock API enabled\x1b[0m - serving /v1/* + /v2/agent from \x1b[36mweb/mocks/\x1b[0m\n" +
-        "    Try: \x1b[32m/voertuig/RN923N\x1b[0m (Opel) or \x1b[32m/voertuig/J640HX\x1b[0m (BMW)\n" +
-        "    Chat: \x1b[32m/v2/chat?mockAuth=on&plate=RN923N\x1b[0m (mock agent, no Python)\n"
+        "    Try: \x1b[32m/voertuig/J650NX\x1b[0m (Opel) or \x1b[32m/voertuig/J640HX\x1b[0m (BMW)\n" +
+        "    Chat: \x1b[32m/v2/chat?mockAuth=on&plate=J650NX\x1b[0m (mock agent, no Python)\n"
       );
     },
   };

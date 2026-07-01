@@ -53,7 +53,7 @@ import { VoertuigPage } from "./VoertuigPage";
 
 function detail(overrides: Partial<RdwVehicleDetail> = {}): RdwVehicleDetail {
   return {
-    kenteken: "RN923N",
+    kenteken: "J650NX",
     found: true,
     algemeen: {
       merk: "OPEL", model: "KARL / VIVA", voertuigsoort: "Personenauto",
@@ -90,7 +90,7 @@ function detail(overrides: Partial<RdwVehicleDetail> = {}): RdwVehicleDetail {
   };
 }
 
-function renderPage(plate = "RN923N") {
+function renderPage(plate = "J650NX") {
   return render(
     <LanguageProvider>
       <MemoryRouter initialEntries={[`/voertuig/${plate}`]}>
@@ -145,13 +145,13 @@ describe("<VoertuigPage />", () => {
     renderPage();
     await waitFor(() => expect(screen.getByText("Algemene informatie")).toBeInTheDocument());
     expect(mockGetVoertuig).not.toHaveBeenCalled();
-    expect(mockAddRecent).toHaveBeenCalledWith("RN923N");
+    expect(mockAddRecent).toHaveBeenCalledWith("J650NX");
   });
 
   it("writes back to the cache after a successful backend fetch", async () => {
     mockGetVoertuig.mockResolvedValue(detail());
     renderPage();
-    await waitFor(() => expect(mockPutCached).toHaveBeenCalledWith("RN923N", expect.any(Object)));
+    await waitFor(() => expect(mockPutCached).toHaveBeenCalledWith("J650NX", expect.any(Object)));
   });
 
   it("surfaces a lookup error to the user", async () => {
@@ -165,7 +165,7 @@ describe("<VoertuigPage />", () => {
     // The provider reads ?lang=en from window.location.search on init.
     // jsdom only lets us set window.location indirectly, so go through
     // history.replaceState which is supported.
-    window.history.replaceState({}, "", "/voertuig/RN923N?lang=en");
+    window.history.replaceState({}, "", "/voertuig/J650NX?lang=en");
     mockGetVoertuig.mockResolvedValue(detail());
     renderPage();
 

@@ -15,7 +15,7 @@
           "type": "function",
           "function": {
             "name": "rdw_fetch",
-            "arguments": "{\"plate\":\"RN923N\"}"
+            "arguments": "{\"plate\":\"J650NX\"}"
           }
         }
       ]
@@ -24,7 +24,7 @@
       "id": "demo-tool-1",
       "role": "tool",
       "toolCallId": "demo-tc-1",
-      "content": "{\"found\":true,\"source\":\"rdw\",\"kenteken\":\"RN923N\",\"make\":\"OPEL\",\"model\":\"KARL / VIVA\",\"firstRegistration\":\"2017-12-29\",\"firstNlRegistration\":\"2017-12-29\",\"apkValidUntil\":\"2026-07-15\",\"apkValid\":true,\"imported\":false,\"energyLabel\":\"B\",\"exported\":false,\"taxi\":false,\"openRecall\":false,\"liabilityInsured\":true}"
+      "content": "{\"found\":true,\"source\":\"rdw\",\"kenteken\":\"J650NX\",\"make\":\"OPEL\",\"model\":\"KARL / VIVA\",\"firstRegistration\":\"2017-12-29\",\"firstNlRegistration\":\"2017-12-29\",\"apkValidUntil\":\"2026-07-15\",\"apkValid\":true,\"imported\":false,\"energyLabel\":\"B\",\"exported\":false,\"taxi\":false,\"openRecall\":false,\"liabilityInsured\":true}"
     },
     {
       "id": "demo-asst-2",

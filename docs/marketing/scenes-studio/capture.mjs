@@ -35,7 +35,7 @@ const APP_CSS = [
 ].join("");
 
 const DOSSIER_AUTH = "?mockAuth=on&mockTier=pass";
-const COMPARE_PRO = "?plates=RN923N,J640HT&mockAuth=on&mockTier=pro";
+const COMPARE_PRO = "?plates=J650NX,J640HT&mockAuth=on&mockTier=pro";
 
 const SCENES = [
   {
@@ -48,7 +48,7 @@ const SCENES = [
   },
   {
     id: "dossier",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     headline: "Sourced vehicle dossier.",
     sub: "Registry facts, market listings, and AI insights when signed in.",
     waitFor: ".hero-card",
@@ -57,7 +57,7 @@ const SCENES = [
   },
   {
     id: "dossier-ai",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     headline: "AI lite analysis on the dossier.",
     sub: "Summary, market band, and buyer flags — no chat required.",
     waitFor: ".dossier-lite-summary",
@@ -67,7 +67,7 @@ const SCENES = [
   },
   {
     id: "dossier-export",
-    path: `/voertuig/RN923N${DOSSIER_AUTH}`,
+    path: `/voertuig/J650NX${DOSSIER_AUTH}`,
     headline: "Export a full buyer report.",
     sub: "PDF with RDW facts, lite AI, and cached deep analysis preview.",
     waitFor: ".dossier-export-preview-deep p",
@@ -77,7 +77,7 @@ const SCENES = [
   },
   {
     id: "chat",
-    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=RN923N&session=marketing-demo",
+    path: "/v2/chat?mockAuth=on&mockTier=pass&plate=J650NX&session=marketing-demo",
     headline: "Ask in plain language.",
     sub: "Tool cards surface RDW data and analysis inline.",
     waitFor: ".cv2-messages-wrapper .vehicle-data-card",
